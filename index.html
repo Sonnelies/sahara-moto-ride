@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sahara Moto Ride | Voyage moto premium au Maroc en petit groupe depuis la Suisse</title>
+    <meta name="description" content="Voyage moto premium au Maroc en petit groupe, organisé depuis la Suisse. Expédition encadrée, itinéraires sélectionnés, sécurité maîtrisée et expérience réservée aux motards expérimentés.">
+    <link rel="canonical" href="https://saharamotoride.ch/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sahara Moto Ride | Voyage moto premium au Maroc en petit groupe">
+    <meta property="og:description" content="Expédition moto encadrée au Maroc, en petit groupe et organisée depuis la Suisse. Structure, sécurité et expérience premium.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saharamotoride.ch/">
+    <meta property="og:site_name" content="Sahara Moto Ride">
+    <meta property="og:locale" content="fr_CH">
+    <!-- ✅ Modifié: image sociale -->
+    <meta property="og:image" content="https://saharamotoride.ch/images/sarah-moto-ride-logo-premium.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sahara Moto Ride | Voyage moto premium au Maroc">
+    <meta name="twitter:description" content="Expédition moto en petit groupe au Maroc, organisation suisse structurée.">
+    <!-- ✅ Modifié: image sociale -->
+    <meta name="twitter:image" content="https://saharamotoride.ch/images/sarah-moto-ride-logo-premium.jpg">
+
+    <!-- JSON-LD TravelAgency -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Sahara Moto Ride",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Welschmattstrasse 41",
+        "addressLocality": "Basel",
+        "postalCode": "4055",
+        "addressCountry": "CH"
+      },
+      "telephone": "+41 76 458 41 43",
+      "priceRange": "CHF 3500+",
+      "description": "Agence de voyage spécialisée dans les voyages moto encadrés au Maroc pour petits groupes.",
+      "url": "https://saharamotoride.ch/"
+    }
+    </script>
+
+    <style>
+        :root {
+            --color-primary: #1a1a1a;
+            --color-accent: #c29b6b;
+            --color-bg: #fcfaf7;
+            --color-text: #333333;
+            --color-text-light: #666666;
+            --spacing-base: 1rem;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --container-width: 1100px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7; /* Légère augmentation pour la lisibilité */
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3 {
+            color: var(--color-primary);
+            font-weight: 600;
+            line-height: 1.3; /* Plus de confort sur les titres longs */
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem; /* Espace constant sous les titres de section */
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem; /* Espace sous les sous-titres */
+        }
+
+        p {
+            margin-bottom: 1.5rem; /* Respiration entre les paragraphes */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        section {
+            padding: 100px 20px;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px; /* Unification du style des boutons */
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-accent);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        /* Header */
+        header#header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(252, 250, 247, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            z-index: 1000;
+            height: 80px;
+            display: flex;
+            align-items: center;
+
+            /* ✅ Ajout: transitions propre (au lieu du style inline JS) */
+            transition: height 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* ✅ Ajout: état scroll */
+        header#header.header-scrolled {
+            height: 70px;
+            background-color: rgba(252, 250, 247, 0.98);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ✅ Modifié: logo texte -> logo image */
+        .logo {
+            display: flex;
+            align-items: center;
+            line-height: 0;
+        }
+
+        /* ✅ Modifié: logo plus grand desktop + transition */
+        .logo img {
+            height: 56px;        /* desktop (avant: 40px) */
+            width: auto;         /* conserve les proportions */
+            display: block;
+            transition: height 0.3s ease;
+        }
+
+        /* ✅ Ajout: logo réduit au scroll */
+        header#header.header-scrolled .logo img {
+            height: 48px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-light);
+        }
+
+        nav a:hover {
+            color: var(--color-primary);
+        }
+
+        .header-cta .btn {
+            padding: 10px 20px;
+            font-size: 0.8rem;
+        }
+
+ 
+
+
+.hero {
+    height: 85vh;
+min-height: 600px;
+
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding: 180px 8% 0; /* contrôle exact du positionnement */
+
+    position: relative;
+    overflow: hidden;
+
+    background-image: url("images/voyage-moto-encadre-maroc-petit-groupe.jpg");
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.75) 0%,
+                rgba(0, 0, 0, 0.65) 35%,
+                rgba(0, 0, 0, 0.4) 65%,
+                rgba(0, 0, 0, 0.2) 100%
+            );
+            z-index: 1;
+        }
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    color: #ffffff;
+}
+
+
+        .hero h1 {
+            font-size: clamp(2.4rem, 4.5vw, 3.4rem);
+            line-height: 1.2;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.92);
+            margin-bottom: 40px; /* Un peu plus d'espace avant les boutons */
+            max-width: 600px;
+        }
+/* Bloc avis sous les boutons */
+
+.hero-review {
+    margin-top: 50px;   /* espace entre boutons et avis */
+    max-width: 520px;
+}
+
+.hero-stars {
+    color: #c9a227;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.hero-stars span {
+    color: #ffffff;
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.hero-review-text {
+    margin-bottom: 0 !important;
+}
+
+.hero-review-author {
+    margin-top: 0 !important;
+}
+
+.hero-review-btn {
+    font-size: 0.8rem;
+}
+
+        .hero-btns {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .hero .btn-primary {
+            background-color: #c9a227;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .hero .btn-primary:hover {
+            background-color: #b38f1f;
+        }
+
+        .hero .btn-outline {
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+
+        .hero .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Sections Titles & Intro */
+        .section-header {
+            margin-bottom: 4rem; /* Respiration avant la grille de contenu */
+        }
+
+        .section-intro {
+            font-size: 1.15rem;
+            color: var(--color-text-light);
+            max-width: 700px;
+        }
+
+        /* Le Voyage */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px; /* Légère augmentation du gap */
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            margin-bottom: 0; /* Pas de marge inutile si c'est le dernier élément */
+        }
+
+        /* Guide */
+        .guide-section {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        .guide-section h2, .guide-section h3 {
+            color: #ffffff;
+        }
+
+        .guide-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px; /* Plus d'espace entre texte et visuel */
+            align-items: center;
+        }
+
+        .guide-text p {
+            margin-bottom: 25px; /* Plus d'espace entre paragraphes sombres */
+            color: #cccccc;
+        }
+
+        .guide-list {
+            margin-top: 30px;
+        }
+
+        .guide-list li {
+            margin-bottom: 18px; /* Plus de respiration entre les points */
+            padding-left: 25px;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .guide-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+        }
+
+        /* Organisation / Pour qui */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .info-block {
+            background: white;
+            padding: 45px; /* Augmentation du padding interne */
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 4px;
+        }
+
+        .info-block h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .info-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Tarif */
+        .tarif-section {
+            background-color: #f7f3ee;
+            text-align: center;
+        }
+
+        .tarif-box {
+            background: white;
+            padding: 60px 40px;
+            max-width: 550px;
+            margin: 0 auto;
+            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.02);
+            border-radius: 4px;
+        }
+
+        .price {
+            font-size: 3.5rem; /* Un peu plus grand */
+            font-weight: 700;
+            color: var(--color-primary);
+            margin: 25px 0;
+            line-height: 1;
+        }
+
+        .price span {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--color-text-light);
+        }
+
+        .limited-badge {
+            display: inline-block;
+            background-color: #e9e0d3;
+            padding: 6px 16px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 25px;
+            border-radius: 20px;
+        }
+
+        /* Contact */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 100px; /* Espace généreux entre info et formulaire */
+        }
+
+        .contact-info h3 {
+            margin-bottom: 25px;
+        }
+
+        .contact-details {
+            margin-bottom: 45px;
+        }
+
+        .contact-details p {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        form {
+            display: grid;
+            gap: 25px; /* Plus d'espace entre les champs */
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        input, textarea {
+            padding: 18px;
+            border: 1px solid #e0e0e0;
+            font-family: inherit;
+            background-color: white;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(194, 155, 107, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            padding: 80px 20px;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+        }
+
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--color-primary);
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .guide-content, .info-grid, .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 80px 20px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            /* ✅ Modifié: logo plus présent sur mobile (avant: 34px) */
+            .logo img {
+                height: 44px;
+            }
+        }
+
+        /* Mobile Menu State */
+        .nav-active nav {
+            display: flex;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background: var(--color-bg);
+            flex-direction: column;
+            padding: 40px;
+            border-bottom: 1px solid #eee;
+            gap: 20px;
+            text-align: center;
+            z-index: 1001;
+        }
+
+        /* ✅ Ajout: quand le header est réduit (70px), le menu doit suivre */
+        .nav-active header#header.header-scrolled nav {
+            top: 70px;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="header-inner">
+            <!-- ✅ Modifié: logo texte -> logo image -->
+            <a href="#" class="logo" aria-label="Sahara Moto Ride - Accueil">
+                <img
+                    src="images/sarah-moto-ride-logo-premium.jpg"
+                    alt="Sahara Moto Ride"
+                    width="160"
+                    height="40"
+                    loading="eager"
+                >
+            </a>
+
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav id="mainNav">
+                <a href="#voyage">Le voyage</a>
+                <a href="#guide">Votre guide</a>
+                <a href="#organisation">Organisation</a>
+                <a href="#tarif">Tarif</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+<div class="header-cta" style="display:flex; gap:12px; align-items:center;">
+    
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScqwFamBuROjh5sSbYkkgtrMvEjBJzqqcB8KiCBpK-dtSeZvw/viewform"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn-outline">
+       Postuler
+    </a>
+
+    <a href="tel:+41764584143" class="btn btn-primary">
+        Appeler
+    </a>
+
+</div>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+<h1>
+L’expédition maîtrisée<br>
+au Maroc
+</h1>
+
+<p>
+Organisation suisse. Groupe limité à 6 motos.
+Deux départs saisonniers par an.
+</p>
+
+<div class="hero-btns">
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScqwFamBuROjh5sSbYkkgtrMvEjBJzqqcB8KiCBpK-dtSeZvw/viewform"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn-primary">
+       Postuler à l’expédition
+    </a>
+
+    <a href="#voyage" class="btn btn-outline">
+       Découvrir l’expédition
+    </a>
+
+</div>
+
+
+
+<div class="hero-review">
+    <div class="hero-stars">★★★★★ <span>5.0 sur Google</span></div>
+
+    <p class="hero-review-text">
+        “Organisation au top et ambiance motarde exceptionnelle.”
+    </p>
+
+    <p class="hero-review-author">— Bernard D.</p>
+
+    <a href="https://search.google.com/local/reviews?placeid=ChIJv2dsvGTTUKERv2s8KxgeDlc"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn btn-outline hero-review-btn">
+   Voir tous les avis Google
+</a>
+
+</div>
+
+        </section>
+
+        <!-- Section Le Voyage -->
+        <section id="voyage" class="section-voyage">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Le voyage</h2>
+                    <p class="section-intro">
+                        La symbiose entre exploration sauvage et sérénité logistique.
+                    </p>
+                </header>
+
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <h3>Petit groupe</h3>
+                        <p>
+                            Nous limitons volontairement chaque expédition à un nombre restreint de participants afin de garantir
+                            une sécurité optimale et une véritable cohésion de groupe.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Votre propre moto</h3>
+                        <p>
+                            Parcourez l’Atlas et le désert avec votre propre machine. Nous prenons en charge l’intégralité du transport
+                            et de la logistique technique pour un plaisir de pilotage pur.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Authenticité</h3>
+                        <p>
+                            Grâce à des itinéraires exclusifs et reconnus, nous vous menons au cœur d’un Maroc préservé,
+                            loin des flux touristiques conventionnels.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Guide -->
+        <section id="guide" class="guide-section">
+            <div class="container">
+                <div class="guide-content">
+                    <div class="guide-text">
+                        <header class="section-title">
+                            <h2>Michel, fondateur</h2>
+                        </header>
+                        <h3>Rigueur helvétique et expertise de terrain</h3>
+                        <p>Michel ne se définit pas comme un simple accompagnateur. Fort d’une présence prolongée au Maroc et d’une connaissance précise du terrain, il conçoit chaque voyage moto encadré au Maroc avec méthode, anticipation et maîtrise.</p>
+                        <ul class="guide-list">
+                            <li>Expertise technique du pilotage Trail et Adventure.</li>
+                            <li>Connaissance approfondie des itinéraires et des réalités locales.</li>
+                            <li>Gestion proactive de la sécurité et des imprévus.</li>
+                            <li>Organisation structurée selon des standards de qualité suisses.</li>
+                        </ul>
+                    </div>
+                    <div class="guide-visual">
+                        <div style="text-align: center;">
+                            <img src="images/michel-guide-voyage-moto-maroc.jpg"
+                                 alt="Michel, guide de voyage moto encadré au Maroc"
+                                 loading="lazy"
+                                 style="width: 100%; max-width: 320px; border-radius: 4px; object-fit: cover; margin-bottom: 40px;">
+
+                            <div style="background: #2a2a2a; padding: 40px; border-radius: 4px; border-left: 4px solid var(--color-accent); text-align: left;">
+                                <p style="font-style: italic; color: #cccccc; margin-bottom: 15px;">
+                                    "Ma mission est de proposer un voyage moto encadré au Maroc où chaque détail est anticipé, afin de garantir une expédition structurée et sécurisée."
+                                </p>
+                                <p style="font-weight: bold; color: #ffffff; margin-bottom: 0;">— Michel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Organisation -->
+        <section id="organisation">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Organisation depuis la Suisse</h2>
+                </header>
+                <div class="info-grid">
+                    <div class="info-block">
+                        <h3>Anticipation logistique</h3>
+                        <p>De la préparation de votre moto à Bâle jusqu’aux étapes quotidiennes sur le terrain, chaque phase est planifiée avec méthode. L’organisation depuis la Suisse garantit clarté, fiabilité et maîtrise des détails avant même le départ.</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Sélection rigoureuse</h3>
+                        <p>Les hébergements et partenaires locaux sont sélectionnés pour leur sérieux et leur capacité à offrir confort et récupération après les journées de piste. Cette exigence contribue à maintenir sécurité, cohésion et qualité d’expérience tout au long du voyage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Sécurité & Maîtrise -->
+<section id="securite" style="background-color:#f7f3ee;">
+    <div class="container">
+        <header class="section-header" style="text-align:center;">
+            <h2>Sécurité et maîtrise opérationnelle</h2>
+            <p class="section-intro" style="margin:0 auto 3rem; max-width:700px;">
+                Le désert impose l’imprévu. Notre organisation élimine l’improvisation.
+                Chaque expédition repose sur un cadre structuré, anticipé et maîtrisé.
+            </p>
+        </header>
+
+        <div class="info-grid">
+            <div class="info-block">
+                <h3>Assistance terrain</h3>
+                <p>
+                    Véhicule 4x4 dédié, assistance mécanique légère quotidienne
+                    et adaptation des itinéraires selon les conditions climatiques
+                    et l’état des pistes.
+                </p>
+            </div>
+
+            <div class="info-block">
+                <h3>Coordination complète</h3>
+                <p>
+                    Gestion des formalités maritimes, organisation logistique
+                    depuis la Suisse et encadrement terrain expérimenté
+                    pour garantir cohérence et sérénité.
+                </p>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:50px;">
+            <p style="font-weight:600; font-size:1rem; margin-bottom:10px;">
+                6 motos maximum par départ.
+            </p>
+            <p style="color:var(--color-text-light); font-size:0.95rem;">
+                Une structure pensée pour préserver sécurité, fluidité et cohésion.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Section Processus de sélection -->
+<section id="selection">
+    <div class="container">
+        <header class="section-header" style="text-align:center;">
+            <h2>Processus de sélection</h2>
+            <p class="section-intro" style="margin:0 auto 3rem; max-width:700px;">
+                Sahara Moto Ride ne fonctionne pas sur une simple réservation en ligne.
+                Chaque participant est intégré au terme d’un échange direct,
+                afin de garantir homogénéité, sécurité et cohésion du groupe.
+            </p>
+        </header>
+
+        <div class="info-grid">
+            <div class="info-block">
+                <h3>1. Candidature</h3>
+                <p>
+                    Dépôt d’un formulaire présentant votre expérience,
+                    votre type de moto et vos attentes.
+                </p>
+            </div>
+
+            <div class="info-block">
+                <h3>2. Entretien téléphonique</h3>
+                <p>
+                    Échange direct avec Michel pour valider l’adéquation
+                    entre votre profil et l’expédition.
+                </p>
+            </div>
+
+            <div class="info-block">
+                <h3>3. Validation du profil</h3>
+                <p>
+                    Constitution d’un groupe homogène,
+                    limité à six motos maximum.
+                </p>
+            </div>
+
+            <div class="info-block">
+                <h3>4. Dossier préparatoire</h3>
+                <p>
+                    Transmission des informations logistiques détaillées,
+                    recommandations d’équipement et calendrier de coordination.
+                </p>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:50px;">
+            <p style="font-weight:600; font-size:1rem;">
+                Chaque groupe est constitué avec attention.
+            </p>
+            <p style="color:var(--color-text-light); font-size:0.95rem;">
+                La rigueur du processus est la garantie silencieuse d’une expédition réussie.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Section Pour qui -->
+        <section id="pour-qui" style="background-color: white;">
+            <div class="container">
+                <header class="section-header" style="text-align: center;">
+                    <h2>Profil du voyageur</h2>
+                    <p class="section-intro" style="margin: 0 auto 3rem;">
+                        Ce voyage moto encadré au Maroc s’adresse à des motards expérimentés, généralement âgés de 40 à 65 ans, recherchant une aventure structurée en petit groupe et organisée depuis la Suisse avec rigueur.
+                    </p>
+                </header>
+
+                <div class="info-grid">
+                    <div style="text-align: center; padding: 0 20px;">
+                        <h4 style="margin-bottom: 15px; font-weight: 600;">Maîtrise technique</h4>
+                        <p style="color: var(--color-text-light); font-size: 0.95rem;">Vous possédez une moto de type Trail ou Adventure et en maîtrisez le pilotage sur route comme sur piste roulante. Vous privilégiez la régularité, la précision et la sécurité plutôt que la performance chronométrée.</p>
+                    </div>
+                    <div style="text-align: center; padding: 0 20px;">
+                        <h4 style="margin-bottom: 15px; font-weight: 600;">Esprit de groupe</h4>
+                        <p style="color: var(--color-text-light); font-size: 0.95rem;">Vous appréciez l’équilibre d’un petit groupe homogène, le respect mutuel et l’entraide. Vous recherchez une expérience humaine authentique, fondée sur la cohésion et la qualité du parcours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section En chiffres -->
+<section id="chiffres" style="background-color:#ffffff;">
+    <div class="container">
+        <header class="section-header" style="text-align:center;">
+            <h2>Sahara Moto Ride en chiffres</h2>
+        </header>
+
+        <div class="features-grid" style="text-align:center;">
+
+            <div>
+                <h3>6</h3>
+                <p>Motos maximum par expédition</p>
+            </div>
+
+            <div>
+                <h3>2</h3>
+                <p>Départs saisonniers par an</p>
+            </div>
+
+            <div>
+                <h3>13–17</h3>
+                <p>Jours d’expédition selon format</p>
+            </div>
+
+            <div>
+                <h3>100%</h3>
+                <p>Organisation structurée depuis la Suisse</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- Section Tarif -->
+        <section id="tarif" class="tarif-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Investissement</h2>
+                </header>
+  <div class="tarif-box">
+    <span class="limited-badge">Groupe volontairement restreint</span>
+    <p style="font-weight: 500;">Expédition encadrée avec organisation complète depuis la Suisse</p>
+    
+    
+    <div class="price">À partir de 3 500 <span>CHF</span></div>
+
+
+
+
+    <p style="margin-bottom: 40px; color: var(--color-text-light); font-size: 0.95rem;">
+        Ce montant inclut l’encadrement professionnel par Michel, la préparation logistique en amont, la reconnaissance des itinéraires ainsi que la sélection rigoureuse des hébergements et partenaires locaux.
+    </p>
+
+    <!-- 🔽 BLOC À AJOUTER ICI -->
+<!-- Bloc Dossier Officiel -->
+<!-- Bloc Dossier Officiel -->
+<div style="margin:40px 0; padding:35px; background:#f3eee7; border-radius:4px; text-align:center;">
+
+    <p style="font-weight:600; margin-bottom:12px; font-size:1rem;">
+        Dossier officiel des expéditions
+    </p>
+
+    <p style="margin-bottom:22px; font-size:0.95rem; color:#666; max-width:520px; margin-left:auto; margin-right:auto;">
+        Calendrier saisonnier, itinéraires détaillés, cadre logistique complet et informations essentielles
+        pour les départs printemps et automne.
+    </p>
+
+    <a href="https://gamma.app/docs/Sahara-Moto-Ride-39zxibd5r7bwpcn"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn-outline">
+       Consulter le dossier officiel
+    </a>
+
+    <p style="margin-top:18px; font-size:0.85rem; color:#888;">
+        Deux expeditions par an | 6 motos maximum par depart
+
+    </p>
+
+</div>
+
+
+
+
+
+
+    <!-- 🔼 FIN DU BLOC -->
+
+    <a href="#contact" class="btn btn-primary" style="width: 100%;">
+        Recevoir le programme détaillé
+    </a>
+</div>
+
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <header class="section-title">
+                            <h2>Planifier votre départ</h2>
+                        </header>
+                        <div class="contact-details">
+                            <p><strong>Sahara Moto Ride</strong></p>
+                            <p>Welschmattstrasse 41<br>4055 Basel, Suisse</p>
+                            <p style="margin-top: 25px;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-accent);">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <a href="tel:+41764584143" style="font-weight: 600;">+41 76 458 41 43</a>
+                            </p>
+                        </div>
+                        <p style="font-size: 0.9rem; color: var(--color-text-light); line-height: 1.6;">
+                            Un premier échange téléphonique permet d’évaluer votre expérience, votre type de moto et l’adéquation de votre profil avec l’expédition proposée.
+                        </p>
+                    </div>
+
+                    <div class="contact-form">
+                        
+                            <form action="https://formspree.io/f/xdaldgzv" method="POST">
+
+
+                        <input type="hidden" name="_subject" value="Nouvelle demande - Sahara Moto Ride">
+                       
+
+
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse e-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="votre@email.ch">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Votre expérience moto et vos attentes</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Décrivez brièvement votre expérience en Trail / Adventure et vos motivations pour ce voyage..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Recevoir les informations détaillées</button>
+
+                            <input type="hidden" name="_redirect" value="https://saharamotoride.ch/merci.html">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+    <div class="container">
+      <span class="footer-logo">
+Sahara Moto Ride<br>
+<span style="font-weight:400; font-size:0.9rem;">
+L’expédition maîtrisée.
+</span>
+</span>
+
+
+        <p>
+            Welschmattstrasse 41, 4055 Basel, Suisse |
+            <a href="tel:+41764584143">+41 76 458 41 43</a>
+        </p>
+
+        <p style="margin-top: 15px;">
+            <a href="conditions-generales.html">Conditions générales</a>
+        </p>
+
+        <p style="margin-top: 25px; opacity: 0.7;">
+            &copy; 2026 Sahara Moto Ride. Tous droits réservés.
+        </p>
+    </div>
+</footer>
+
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const body = document.body;
+        const navLinks = document.querySelectorAll('#mainNav a');
+        const header = document.getElementById('header');
+
+        menuToggle.addEventListener('click', () => {
+            body.classList.toggle('nav-active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                body.classList.remove('nav-active');
+            });
+        });
+
+        // ✅ Modifié: on remplace le style inline par une classe (plus fiable)
+        function updateHeaderOnScroll() {
+            header.classList.toggle('header-scrolled', window.scrollY > 50);
+        }
+
+        window.addEventListener('scroll', updateHeaderOnScroll);
+        updateHeaderOnScroll(); // ✅ applique l’état dès le chargement
+    </script>
+</body>
+</html>
+
