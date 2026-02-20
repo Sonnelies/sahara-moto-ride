@@ -1,406 +1,394 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conditions générales de participation | Sahara Moto Ride</title>
-  <meta name="description" content="Conditions générales de participation (CG) – Sahara Moto Ride / Michel Etienne. Version du 01.12.2025." />
-  <style>
-    :root{
-      --color-primary:#1a1a1a;
-      --color-accent:#c29b6b;
-      --color-bg:#fcfaf7;
-      --color-text:#333333;
-      --color-text-light:#666666;
-      --container-width:1100px;
-      --transition:all .3s ease;
-    }
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      background:var(--color-bg);
-      color:var(--color-text);
-      line-height:1.7;
-      -webkit-font-smoothing:antialiased;
-    }
-    a{color:inherit;text-decoration:none;transition:var(--transition)}
-    a:hover{color:var(--color-accent)}
-    .container{max-width:var(--container-width);margin:0 auto;padding:0 20px}
-    .legal-hero{
-      padding:110px 0 30px;
-      border-bottom:1px solid rgba(0,0,0,.06);
-      background:linear-gradient(180deg, rgba(194,155,107,.10), rgba(252,250,247,0));
-    }
-    .legal-hero h1{
-      color:var(--color-primary);
-      font-size:clamp(1.9rem,3.2vw,2.6rem);
-      line-height:1.2;
-      letter-spacing:-.3px;
-      margin-bottom:14px;
-    }
-    .meta{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      color:var(--color-text-light);
-      font-size:.95rem;
-    }
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:6px 12px;
-      border-radius:999px;
-      background:#fff;
-      border:1px solid rgba(0,0,0,.06);
-    }
-    .legal{
-      padding:60px 0 100px;
-    }
-    .layout{
-      display:grid;
-      grid-template-columns: 320px 1fr;
-      gap:50px;
-      align-items:start;
-    }
-    .toc{
-      position:sticky;
-      top:100px;
-      padding:18px;
-      background:#fff;
-      border:1px solid rgba(0,0,0,.06);
-      border-radius:8px;
-    }
-    .toc h2{
-      font-size:1rem;
-      text-transform:uppercase;
-      letter-spacing:.08em;
-      color:var(--color-text-light);
-      margin-bottom:14px;
-    }
-    .toc a{
-      display:block;
-      padding:8px 10px;
-      border-radius:6px;
-      color:var(--color-text);
-      font-size:.95rem;
-    }
-    .toc a:hover{
-      background:rgba(194,155,107,.12);
-      color:var(--color-primary);
-    }
-    article{
-      background:#fff;
-      border:1px solid rgba(0,0,0,.06);
-      border-radius:8px;
-      padding:34px;
-    }
-    section{scroll-margin-top:110px}
-    h3{
-      color:var(--color-primary);
-      font-size:1.25rem;
-      margin:28px 0 10px;
-      line-height:1.3;
-    }
-    h4{
-      color:var(--color-primary);
-      font-size:1.05rem;
-      margin:18px 0 8px;
-      line-height:1.3;
-    }
-    p{margin:0 0 14px}
-    ul{margin:0 0 14px 18px}
-    li{margin:0 0 8px}
-    .note{
-      margin-top:24px;
-      padding:14px 16px;
-      border-left:4px solid var(--color-accent);
-      background:rgba(194,155,107,.10);
-      color:var(--color-text);
-      border-radius:6px;
-      font-size:.95rem;
-    }
-    .footer-legal{
-      padding:40px 0 70px;
-      color:var(--color-text-light);
-      font-size:.9rem;
-      text-align:center;
-      border-top:1px solid rgba(0,0,0,.06);
-    }
-    @media (max-width: 992px){
-      .layout{grid-template-columns:1fr}
-      .toc{position:relative;top:auto}
-      .legal-hero{padding-top:90px}
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditions générales de participation | Sahara Moto Ride</title>
+    <meta name="description" content="Conditions générales de participation (CG) – Sahara Moto Ride / Michel Etienne. Version du 01.12.2025." />
+    
+    <!-- Google Fonts pour un look plus aventurier/pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #1a1a1a;
+            --color-accent: #c29b6b;
+            --color-accent-soft: rgba(194, 155, 107, 0.1);
+            --color-bg: #fcfaf7;
+            --color-text: #333333;
+            --color-text-light: #666666;
+            --container-width: 1140px;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Liens */
+        a { color: inherit; text-decoration: none; transition: var(--transition); }
+        a:hover { color: var(--color-accent); }
+
+        .container { max-width: var(--container-width); margin: 0 auto; padding: 0 24px; }
+
+        /* Header / Hero */
+        .legal-hero {
+            padding: 120px 0 60px;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            background: linear-gradient(180deg, var(--color-accent-soft), transparent);
+            text-align: center;
+        }
+
+        .legal-hero h1 {
+            font-family: 'Oswald', sans-serif;
+            color: var(--color-primary);
+            font-size: clamp(2rem, 5vw, 3rem);
+            line-height: 1.1;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .meta {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.08);
+            font-size: 0.9rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        /* Actions */
+        .actions {
+            margin-top: 20px;
+        }
+        
+        .btn-print {
+            background: var(--color-primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .btn-print:hover {
+            background: var(--color-accent);
+            transform: translateY(-2px);
+        }
+
+        /* Layout */
+        .legal { padding: 60px 0 100px; }
+        
+        .layout {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        /* Sommaire (Sidebar) */
+        .toc {
+            position: sticky;
+            top: 40px;
+            padding: 24px;
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .toc h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-primary);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--color-accent);
+        }
+
+        .toc ul { list-style: none; margin: 0; }
+        
+        .toc a {
+            display: block;
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            border-left: 2px solid transparent;
+        }
+
+        .toc a:hover, .toc a.active {
+            background: var(--color-accent-soft);
+            color: var(--color-primary);
+            border-left-color: var(--color-accent);
+        }
+
+        /* Article Content */
+        article {
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: 12px;
+            padding: 48px;
+            box-shadow: var(--shadow);
+        }
+
+        section { scroll-margin-top: 40px; margin-bottom: 50px; }
+        section:last-child { margin-bottom: 0; }
+
+        h3 {
+            font-family: 'Oswald', sans-serif;
+            color: var(--color-primary);
+            font-size: 1.6rem;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            color: var(--color-primary);
+            font-size: 1.15rem;
+            margin: 24px 0 12px;
+            font-weight: 700;
+        }
+
+        p { margin-bottom: 18px; color: var(--color-text); }
+        
+        ul { margin: 0 0 20px 24px; }
+        li { margin-bottom: 10px; }
+
+        .note {
+            margin: 30px 0;
+            padding: 20px 24px;
+            border-left: 5px solid var(--color-accent);
+            background: var(--color-accent-soft);
+            color: var(--color-primary);
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer-legal {
+            padding: 60px 0;
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            text-align: center;
+            background: #fff;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 992px) {
+            .layout { grid-template-columns: 1fr; gap: 40px; }
+            .toc { position: relative; top: 0; order: -1; }
+            article { padding: 30px 20px; }
+            .legal-hero { padding: 80px 0 40px; }
+        }
+
+        /* Print Style */
+        @media print {
+            .toc, .btn-print, .legal-hero::before { display: none !important; }
+            .layout { grid-template-columns: 1fr; }
+            article { border: none; box-shadow: none; padding: 0; }
+            body { background: white; }
+            .legal { padding: 0; }
+        }
+    </style>
 </head>
 <body>
 
-  <header class="legal-hero">
-    <div class="container">
-      <h1>Conditions générales de participation (CG)</h1>
-      <div class="meta">
-        <span class="pill"><strong>Version</strong> : 01.12.2025</span>
-        <span class="pill"><strong>Organisateur</strong> : Michel Etienne (Bâle, Suisse)</span>
-      </div>
-      <div class="note">
-        La participation à un voyage implique l’acceptation pleine et entière des présentes Conditions générales.
-      </div>
-    </div>
-  </header>
+    <header class="legal-hero">
+        <div class="container">
+            <h1>Conditions générales de participation (CG)</h1>
+            <div class="meta">
+                <span class="pill"><strong>Version</strong> : 01.12.2025</span>
+                <span class="pill"><strong>Organisateur</strong> : Michel Etienne (Bâle, Suisse)</span>
+            </div>
+            <div class="actions">
+                <button onclick="window.print()" class="btn-print">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                    Imprimer les CG
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <main class="legal">
-    <div class="container">
-      <div class="layout">
+    <main class="legal">
+        <div class="container">
+            <div class="layout">
 
-        <nav class="toc" aria-label="Sommaire des conditions générales">
-          <h2>Sommaire</h2>
-          <a href="#preambule">1. Préambule</a>
-          <a href="#inscription">2. Inscription et réservation</a>
-          <a href="#prix">3. Prix, prestations incluses et non incluses</a>
-          <a href="#annulation">4. Annulation, désistement et crédit</a>
-          <a href="#responsabilites">5. Responsabilités et assurances du participant</a>
-          <a href="#discipline">6. Discipline, sécurité et conduite</a>
-          <a href="#pannes">7. Pannes, incidents et abandon</a>
-          <a href="#modifications">8. Modifications du programme</a>
-          <a href="#documents">9. Documents de voyage</a>
-          <a href="#donnees">10. Protection des données</a>
-          <a href="#droit">11. Droit applicable et tribunal compétent</a>
-        </nav>
+                <nav class="toc" aria-label="Sommaire">
+                    <h2>Sommaire</h2>
+                    <ul>
+                        <li><a href="#preambule">1. Préambule</a></li>
+                        <li><a href="#inscription">2. Inscription</a></li>
+                        <li><a href="#prix">3. Prix & Prestations</a></li>
+                        <li><a href="#annulation">4. Annulation & Crédit</a></li>
+                        <li><a href="#responsabilites">5. Responsabilités</a></li>
+                        <li><a href="#discipline">6. Discipline & Sécurité</a></li>
+                        <li><a href="#pannes">7. Pannes & Abandon</a></li>
+                        <li><a href="#modifications">8. Modifications</a></li>
+                        <li><a href="#documents">9. Documents de voyage</a></li>
+                        <li><a href="#donnees">10. Protection des données</a></li>
+                        <li><a href="#droit">11. Droit & Juridiction</a></li>
+                    </ul>
+                </nav>
 
-        <article>
-          <section id="preambule">
-            <h3>1. Préambule</h3>
-            <p>
-              La société <strong>Michel Etienne, bureau d’expertises</strong>, immatriculée au Registre du Commerce de Bâle
-              et exploitée par Michel Etienne (signature individuelle), ci-après « l’Organisateur », organise des voyages moto
-              dans différents pays. :contentReference[oaicite:0]{index=0}
-            </p>
-            <p>La participation à un voyage implique l’acceptation pleine et entière des présentes Conditions générales. :contentReference[oaicite:1]{index=1}</p>
-          </section>
+                <article>
+                    <div class="note">
+                        La participation à un voyage implique l’acceptation pleine et entière des présentes Conditions générales.
+                    </div>
 
-          <section id="inscription">
-            <h3>2. Inscription et réservation</h3>
+                    <section id="preambule">
+                        <h3>1. Préambule</h3>
+                        <p>
+                            La société <strong>Michel Etienne, bureau d’expertises</strong>, immatriculée au Registre du Commerce de Bâle
+                            et exploitée par Michel Etienne (signature individuelle), ci-après « l’Organisateur », organise des voyages moto
+                            dans différents pays.
+                        </p>
+                        <p>Le contrat est conclu dès que l'Organisateur confirme l'inscription du participant par écrit ou par voie électronique.</p>
+                    </section>
 
-            <h4>2.1 Inscription</h4>
-            <p>L’inscription se fait via un bulletin d’inscription précisant notamment : :contentReference[oaicite:2]{index=2}</p>
-            <ul>
-              <li>les dates du voyage ;</li>
-              <li>les prestations incluses et non incluses ;</li>
-              <li>les prix ;</li>
-              <li>les options choisies ;</li>
-              <li>l’identité complète du participant ;</li>
-              <li>les informations du passager / de la passagère le cas échéant (identité, passeport, coordonnées) ;</li>
-              <li>les informations de la moto (marque, modèle, cylindrée, immatriculation).</li>
-            </ul>
+                    <section id="inscription">
+                        <h3>2. Inscription et réservation</h3>
+                        <h4>2.1 Inscription</h4>
+                        <p>L’inscription se fait via un bulletin d’inscription précisant notamment :</p>
+                        <ul>
+                            <li>Les dates du voyage et l'itinéraire prévu ;</li>
+                            <li>Les prestations incluses et non incluses ;</li>
+                            <li>L’identité complète du participant et de son éventuel passager ;</li>
+                            <li>Les informations techniques de la moto (marque, immatriculation).</li>
+                        </ul>
 
-            <h4>2.2 Acompte</h4>
-            <p>La réservation devient effective dès réception d’un acompte de <strong>25%</strong> du montant total. :contentReference[oaicite:3]{index=3}</p>
+                        <h4>2.2 Modalités de paiement</h4>
+                        <p>La réservation devient effective dès réception d’un acompte de <strong>25%</strong> du montant total. Le solde doit être acquitté au plus tard <strong>30 jours</strong> avant le départ.</p>
+                        
+                        <h4>2.3 Nombre minimum de participants</h4>
+                        <p>Le voyage est organisé sous réserve d’un minimum de <strong>4 participants</strong>. L’Organisateur confirmera le départ au plus tard <strong>5 semaines</strong> avant la date prévue.</p>
+                    </section>
 
-            <h4>2.3 Solde</h4>
-            <p>Le solde doit être payé au plus tard <strong>30 jours</strong> avant le départ. :contentReference[oaicite:4]{index=4}</p>
-            <p>
-              Dès paiement complet, les billets de ferry ainsi que les documents logistiques et pratiques sont remis au participant.
-              :contentReference[oaicite:5]{index=5}
-            </p>
+                    <section id="prix">
+                        <h3>3. Prix et prestations</h3>
+                        <p>Les prix sont indiqués par personne. Ils comprennent les services mentionnés spécifiquement dans le descriptif du voyage au moment de l'inscription.</p>
+                        <h4>3.1 Monnaie et taux de change</h4>
+                        <p>La monnaie de référence est le <strong>Franc Suisse (CHF)</strong>. Les paiements en Euros sont acceptés sur la base des montants indiqués dans le bulletin sans conversion supplémentaire.</p>
+                    </section>
 
-            <h4>2.4 Conditions particulières</h4>
-            <p>
-              Les conditions spécifiques (chambre individuelle, options, ferry, niveau requis, etc.) figurent dans le bulletin
-              d’inscription et font partie intégrante du contrat. :contentReference[oaicite:6]{index=6}
-            </p>
+                    <section id="annulation">
+                        <h3>4. Annulation et désistement</h3>
+                        <p>En cas d'annulation par le participant :</p>
+                        <ul>
+                            <li><strong>Plus de 30 jours avant :</strong> l'acompte est retenu.</li>
+                            <li><strong>Entre 30 et 15 jours avant :</strong> 50% du montant total est dû.</li>
+                            <li><strong>Moins de 15 jours avant :</strong> 100% du montant total est dû.</li>
+                        </ul>
+                        <p>L'Organisateur recommande vivement la souscription à une assurance annulation privée.</p>
+                    </section>
 
-            <h4>2.5 Nombre minimum de participants</h4>
-            <p>Le voyage est organisé sous réserve d’un minimum de <strong>4 participants</strong>. :contentReference[oaicite:7]{index=7}</p>
-            <p>
-              L’Organisateur fixe un délai de <strong>5 semaines</strong> avant le départ pour atteindre ce minimum. Si le minimum
-              n’est pas atteint à l’échéance, le voyage est annulé et les acomptes sont remboursés intégralement, sans frais facturables
-              aux participants. :contentReference[oaicite:8]{index=8}
-            </p>
-            <p>
-              Si le minimum est atteint au plus tard 5 semaines avant le départ, le voyage est définitivement confirmé et chaque participant
-              en est informé personnellement. :contentReference[oaicite:9]{index=9}
-            </p>
-          </section>
+                    <section id="responsabilites">
+                        <h3>5. Responsabilités et Assurances</h3>
+                        <p>Chaque participant conduit sous sa propre responsabilité. Il doit posséder un permis de conduire valide et adapté à la cylindrée de son véhicule.</p>
+                        <h4>5.1 Assurances obligatoires</h4>
+                        <p>Le participant s'engage à être couvert par :</p>
+                        <ul>
+                            <li>Une assurance RC internationale (Carte Verte) couvrant le pays de destination.</li>
+                            <li>Une assurance assistance/rapatriement (type TCS, ACS ou équivalent).</li>
+                            <li>Une assurance accident et maladie couvrant les soins à l'étranger.</li>
+                        </ul>
+                    </section>
 
-          <section id="prix">
-            <h3>3. Prix, prestations incluses et non incluses</h3>
-            <p>
-              Les prestations comprises, non comprises et les prix sont définis pour chaque voyage dans le bulletin d’inscription,
-              car ils peuvent varier selon le pays. :contentReference[oaicite:10]{index=10}
-            </p>
+                    <section id="discipline">
+                        <h3>6. Discipline et Sécurité</h3>
+                        <p>Le respect du code de la route local est impératif. Le guide se réserve le droit d'exclure tout participant dont le comportement mettrait en danger la sécurité ou la cohésion du groupe.</p>
+                    </section>
 
-            <h4>3.1 Conditions financières</h4>
+                    <section id="pannes">
+                        <h3>7. Pannes et Abandon</h3>
+                        <p>En cas de panne immobilisante, les frais de transport et de rapatriement du véhicule sont à la charge exclusive du participant et de ses assurances personnelles.</p>
+                    </section>
 
-            <h4>3.1.1 Monnaie officielle</h4>
-            <p>
-              La monnaie officielle utilisée par l’Organisateur est le <strong>franc suisse (CHF)</strong>. Sauf indication expresse en euros,
-              les montants sont exprimés en CHF. :contentReference[oaicite:11]{index=11}
-            </p>
+                    <section id="modifications">
+                        <h3>8. Modifications du programme</h3>
+                        <p>L'Organisateur se réserve le droit de modifier l'itinéraire en cas de force majeure (météo, conditions politiques, état des routes) pour garantir la sécurité des participants.</p>
+                    </section>
 
-            <h4>3.1.2 Paiements en euros</h4>
-            <ul>
-              <li>Pour acomptes et versements : les montants indiqués en EUR sont dus tels quels sur un compte en euros, sans conversion.</li>
-              <li>Pour remboursements et notes de crédit : le taux appliqué est celui de la BNS en vigueur à la date d’émission.</li>
-            </ul>
-            <p>Aucun autre taux de change ne peut être exigé par le participant. :contentReference[oaicite:12]{index=12}</p>
-          </section>
+                    <section id="documents">
+                        <h3>9. Documents de voyage</h3>
+                        <p>Le participant est responsable de la validité de son passeport (valide 6 mois après le retour) et de l'obtention des visas éventuels.</p>
+                    </section>
 
-          <section id="annulation">
-            <h3>4. Annulation, désistement et crédit</h3>
+                    <section id="donnees">
+                        <h3>10. Protection des données</h3>
+                        <p>Les données personnelles ne sont utilisées que pour la logistique du voyage (hôtels, ferries) et ne sont jamais cédées à des tiers à des fins commerciales.</p>
+                    </section>
 
-            <h4>4.1 Désistement avant le départ</h4>
-            <p>En cas d’annulation avant le départ par le participant, l’acompte est retenu pour couvrir les frais engagés. :contentReference[oaicite:13]{index=13}</p>
+                    <section id="droit">
+                        <h3>11. Droit applicable et for juridique</h3>
+                        <p>Le droit suisse est seul applicable. En cas de litige, le for juridique exclusif est situé à <strong>Bâle (Basel-Stadt)</strong>.</p>
+                    </section>
+                </article>
 
-            <h4>4.2 Désistement après paiement du solde</h4>
-            <ul>
-              <li>Jusqu’à <strong>15 jours</strong> avant le départ : <strong>50%</strong> du montant total du voyage est dû.</li>
-              <li>Moins de <strong>15 jours</strong> avant le départ : <strong>100%</strong> du montant total du voyage est dû.</li>
-            </ul>
-            <p>
-              En cas d’annulation documentée (certificat médical, accident, hospitalisation, décès d’un proche), l’Organisateur peut,
-              à bien plaire, émettre une note de crédit maximale de <strong>30%</strong>, valable <strong>24 mois</strong>, non remboursable et personnelle.
-              :contentReference[oaicite:14]{index=14}
-            </p>
+            </div>
+        </div>
+    </main>
 
-            <h4>4.3 Assurances obligatoires</h4>
-            <p>Chaque participant doit disposer d’une assurance annulation et d’une assurance rapatriement valables dans le pays de destination. :contentReference[oaicite:15]{index=15}</p>
-          </section>
+    <footer class="footer-legal">
+        <div class="container">
+            <p>© <span id="year"></span> Sahara Moto Ride — Michel Etienne. Tous droits réservés.</p>
+        </div>
+    </footer>
 
-          <section id="responsabilites">
-            <h3>5. Responsabilités et assurances du participant</h3>
+    <script>
+        // Mise à jour de l'année automatiquement
+        document.getElementById("year").textContent = new Date().getFullYear();
 
-            <h4>5.1 État de la moto</h4>
-            <p>
-              La moto doit être en parfait état mécanique. Les pneus doivent être neufs ou suffisamment récents pour supporter l’intégralité du kilométrage,
-              tout en respectant les limites légales d’usure. :contentReference[oaicite:16]{index=16}
-            </p>
+        // Script simple pour mettre en évidence la section active dans le sommaire
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.toc a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
 
-            <h4>5.2 Responsabilité individuelle</h4>
-            <p>
-              Le participant est responsable de sa conduite, de son comportement et de sa moto durant tout le voyage.
-              En cas d’accident (route ou off-road), l’Organisateur ne peut être tenu responsable : le participant reste responsable des dommages
-              matériels et corporels causés à lui-même, à sa moto, à son passager ou à des tiers. :contentReference[oaicite:17]{index=17}
-            </p>
-
-            <h4>5.3 Assurances moto et voyage obligatoires</h4>
-
-            <h4>5.3.1 Assurances du véhicule</h4>
-            <ul>
-              <li>Assurance responsabilité civile internationale valable dans le pays de destination.</li>
-              <li>Attestation d’assurance internationale (anciennement carte verte).</li>
-              <li>Assurance casco (fortement recommandée).</li>
-              <li>Assurance rapatriement de la moto.</li>
-              <li>Carnet de rapatriement ACS, TCS ou équivalent (véhicule, pilote, passager).</li>
-            </ul>
-            <p>:contentReference[oaicite:18]{index=18}</p>
-
-            <h4>5.3.2 Assurances voyage</h4>
-            <ul>
-              <li>Rapatriement sanitaire ;</li>
-              <li>Annulation ;</li>
-              <li>Soins médicaux à l’étranger ;</li>
-              <li>Prise en charge internationale.</li>
-            </ul>
-            <p>Il appartient au participant de vérifier validité et étendue des assurances. :contentReference[oaicite:19]{index=19}</p>
-          </section>
-
-          <section id="discipline">
-            <h3>6. Discipline, sécurité et conduite</h3>
-
-            <h4>6.1 Sécurité routière</h4>
-            <p>Le participant s’engage à respecter le code de la route du pays de destination et les consignes du guide. :contentReference[oaicite:20]{index=20}</p>
-
-            <h4>6.2 Comportement dans le groupe</h4>
-            <p>
-              En cas de conduite dangereuse, de non-respect des consignes ou de mésentente grave, l’Organisateur peut exiger qu’un participant quitte le groupe.
-              Une indemnité de <strong>CHF 60.– / nuit</strong> peut alors lui être versée. :contentReference[oaicite:21]{index=21}
-            </p>
-
-            <h4>6.3 Absence de véhicule d’accompagnement</h4>
-            <p>
-              Sauf mention contraire, le voyage se déroule sans véhicule d’assistance. Chaque participant transporte ses propres bagages. :contentReference[oaicite:22]{index=22}
-            </p>
-          </section>
-
-          <section id="pannes">
-            <h3>7. Pannes, incidents et abandon</h3>
-
-            <h4>7.1 Panne mécanique</h4>
-            <p>
-              En cas de panne grave, la moto est rapatriée selon les règles de la compagnie maritime depuis le pays de destination.
-              Les frais sont à la charge du participant. :contentReference[oaicite:23]{index=23}
-            </p>
-
-            <h4>7.2 Abandon volontaire</h4>
-            <p>
-              En cas d’abandon volontaire du voyage, une indemnité de <strong>CHF 60.– / nuit</strong> peut être versée selon les modalités définies. :contentReference[oaicite:24]{index=24}
-            </p>
-          </section>
-
-          <section id="modifications">
-            <h3>8. Modifications du programme</h3>
-            <p>
-              L’Organisateur peut modifier itinéraire, étapes ou horaires en fonction des conditions météo, de l’état des routes/pistes,
-              des contraintes maritimes ou de la sécurité dans le pays de destination. Aucune indemnisation ne peut être exigée. :contentReference[oaicite:25]{index=25}
-            </p>
-          </section>
-
-          <section id="documents">
-            <h3>9. Documents de voyage</h3>
-
-            <h4>9.1 Documents d’identité</h4>
-            <p>Passeport valable au moins <strong>6 mois</strong> après l’entrée dans le pays de destination. :contentReference[oaicite:26]{index=26}</p>
-
-            <h4>9.2 Documents du véhicule</h4>
-            <ul>
-              <li>Permis de circulation original au nom du participant.</li>
-              <li>Si la moto ne lui appartient pas : procuration signée du propriétaire (usage, durée, pays).</li>
-            </ul>
-            <p>:contentReference[oaicite:27]{index=27}</p>
-
-            <h4>9.3 Attestation d’assurance</h4>
-            <p>Attestation d’assurance internationale (anciennement carte verte) valable dans le pays de destination. :contentReference[oaicite:28]{index=28}</p>
-
-            <h4>9.4 Validité des documents</h4>
-            <p>
-              Le participant est responsable de la validité et de la conformité de tous ses documents. L’Organisateur ne peut être tenu responsable en cas de refus d’entrée. :contentReference[oaicite:29]{index=29}
-            </p>
-          </section>
-
-          <section id="donnees">
-            <h3>10. Protection des données</h3>
-            <p>
-              Les données collectées servent uniquement à l’organisation du voyage et ne sont transmises qu’aux partenaires indispensables (réservation du ferry). :contentReference[oaicite:30]{index=30}
-            </p>
-          </section>
-
-          <section id="droit">
-            <h3>11. Droit applicable et tribunal compétent</h3>
-            <p>
-              Les présentes CG sont régies par le droit suisse. Le tribunal compétent est <strong>Basel-Stadt</strong>, siège de l’Organisateur. :contentReference[oaicite:31]{index=31}
-            </p>
-          </section>
-
-          <div class="note">
-            Document basé sur les « Conditions générales de participation (CG) – Version du 01.12.2025 ». :contentReference[oaicite:32]{index=32}
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer-legal">
-    <div class="container">
-      <p>© <span id="year"></span> Sahara Moto Ride — Conditions générales de participation.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
