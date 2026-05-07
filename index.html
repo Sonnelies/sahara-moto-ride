@@ -374,6 +374,93 @@
             max-width: 700px;
         }
 
+        /* --- Ce code définit l'apparence de ton nouveau texte --- */
+        .badge-nouveau {
+            display: block;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: var(--color-accent); /* C'est l'ocre sable */
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+        }
+
+        /* --- Ce code définit l'apparence de ton nouveau texte --- */
+        .badge-nouveau {
+            display: block;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: var(--color-accent); /* C'est l'ocre sable */
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+        }
+
+        /* --- NOUVEAU STYLE À COLLER ICI --- */
+        .section-horizons {
+            padding: 60px 0;
+            background-color: var(--color-bg-light); 
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .horizons-title {
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .horizons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+        }
+
+        .horizon-card {
+            padding: 20px;
+        }
+
+        .horizon-card h4 {
+            font-size: 1.3rem;
+            color: var(--color-text);
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .horizon-card p {
+            font-size: 1rem;
+            color: var(--color-text-light);
+            line-height: 1.6;
+        }
+
+        .horizons-footer {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--color-accent); /* Couleur ocre sable */
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* --- FIN DU STYLE --- */
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 50px;
+        }
+
+
+
+
+
+
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -680,6 +767,7 @@
         <section id="voyage" class="section-voyage">
             <div class="container">
                 <header class="section-header">
+                    <span class="badge-nouveau">De la route à la piste : l’aventure sur mesure</span>
                     <h2>Le voyage</h2>
                     <p class="section-intro">La symbiose entre exploration sauvage et sérénité logistique.</p>
                 </header>
@@ -690,15 +778,40 @@
                     </article>
                     <article class="feature-card">
                         <h3>Votre propre moto</h3>
-                        <p>Parcourez l’Atlas et le désert avec votre propre machine. Nous prenons en charge l’intégralité du transport et de la logistique technique pour un plaisir de pilotage pur.</p>
+                        <p>Parcourez l’Atlas et le désert avec votre propre machine. Que vous soyez sur l'asphalte ou sur les pistes les plus sauvages, nous orchestrons toute la logistique et la coordination du transport de votre moto pour un plaisir de pilotage pur.</p>
                     </article>
                     <article class="feature-card">
                         <h3>Authenticité</h3>
-                        <p>Grâce à des itinéraires exclusifs et reconnus, nous vous menons au cœur d’un Maroc préservé, loin des flux touristiques conventionnels.</p>
+                        <p>Grâce à des itinéraires exclusifs et reconnus, nous vous menons au cœur d’un Maroc préservé. Choisissez votre horizon : l’élégance des routes panoramiques ou l’immersion brute des pistes sahariennes, toujours loin des flux touristiques conventionnels.</p>
                     </article>
                 </div>
             </div>
         </section>
+
+
+
+
+        <section class="section-horizons">
+            <div class="container text-center">
+                <h3 class="horizons-title">Deux horizons, une même exigence</h3>
+                <div class="horizons-grid">
+                    <div class="horizon-card" style="text-align: left;">
+                        <h4>Le Voyage Route</h4>
+                        <p>Conçu exclusivement pour les amateurs de belles trajectoires et de bitume. Les groupes "Route" évoluent uniquement sur des <strong>routes goudronnées et des rubans d'asphalte parfaits</strong> à travers l'Atlas. Aucun passage sur piste n'est prévu, garantissant un confort de roulage total et une accessibilité absolue, idéale pour rouler à deux avec passager.</p>
+                    </div>
+                    <div class="horizon-card" style="text-align: left;">
+                        <h4>Le Raid Piste</h4>
+                        <p>Un voyage où la piste est reine. Ce groupe évolue sur un tracé composé d'une <strong>majorité de pistes hors-goudron</strong>. Le parcours est varié : il alterne entre des pistes roulantes simples et des sections plus caillouteuses ou techniques. Bien que parfois physiques, toutes les difficultés ont été sélectionnées pour être <strong>parfaitement accessibles à tous</strong>, sans besoin d'être un expert du tout-terrain. <span style="font-style: italic; display: block; margin-top: 10px; color: var(--color-accent);">(Solo uniquement, sans passager)</span></p>
+                    </div>
+                </div>
+                <p class="horizons-footer">Toutes nos expéditions bénéficient de la même assistance logistique premium.</p>
+            </div>
+        </section>
+
+
+
+
+
 
         <section id="guide" class="guide-section">
             <div class="container">
@@ -707,13 +820,13 @@
                         <header class="section-title">
                             <h2>Michel, fondateur</h2>
                         </header>
-                        <h3>Rigueur helvétique et expertise de terrain</h3>
-                        <p>Michel ne se définit pas comme un simple accompagnateur. Fort d’une présence prolongée au Maroc et d’une connaissance précise du terrain, il conçoit chaque voyage moto encadré au Maroc avec méthode, anticipation et maîtrise.</p>
+                        <h3>Rigueur helvétique et expertise tout-terrain</h3>
+                        <p>Michel ne se définit pas comme un simple accompagnateur. Fort d’une présence prolongée au Maroc et d’une parfaite maîtrise de la route et de la piste, il conçoit chaque expédition avec méthode, anticipation et une solide expérience du pilotage en milieu désertique.</p>
                         <ul class="guide-list">
-                            <li>Expertise technique du pilotage Trail et Adventure.</li>
-                            <li>Connaissance approfondie des itinéraires et des réalités locales.</li>
-                            <li>Gestion proactive de la sécurité et des imprévus.</li>
-                            <li>Organisation structurée selon des standards de qualité suisses.</li>
+                            <li>Expertise technique du pilotage (courbes sur asphalte et navigation Trail / Raid sur pistes).</li>
+                            <li>Connaissance approfondie des itinéraires routiers et des pistes sahariennes locales.</li>
+                            <li>Gestion proactive de la sécurité, de la logistique technique et des imprévus.</li>
+                            <li>Organisation rigoureuse et structurée selon des standards de qualité suisses.</li>
                         </ul>
                     </div>
                     <div class="guide-visual">
@@ -721,7 +834,7 @@
                             <img src="images/michel-guide-voyage-moto-maroc.jpg" alt="Michel" loading="lazy" style="width: 100%; max-width: 400px; border-radius: 4px; object-fit: cover; margin-bottom: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
                             <div style="background: #2a2a2a; padding: 40px; border-radius: 4px; border-left: 4px solid var(--color-accent); text-align: left;">
                                 <p style="font-style: italic; color: #cccccc; margin-bottom: 15px;">
-                                    "Ma mission est de proposer un voyage moto encadré au Maroc où chaque detail est anticipé, afin de garantir une expédition structurée et sécurisée."
+                                    "Ma mission est de proposer une expédition moto encadrée au Maroc où chaque détail est anticipé, que l'on suive l'asphalte ou que l'on trace sa route sur la piste."
                                 </p>
                                 <p style="font-weight: bold; color: #ffffff; margin-bottom: 0;">— Michel</p>
                             </div>
