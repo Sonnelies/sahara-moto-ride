@@ -13,6 +13,15 @@
     <meta name="description" content="Voyage moto au Maroc en petit groupe, guidé par Michel — expert du terrain depuis 2002. Désert, Atlas, pistes et riads authentiques. 6 motos maximum, départ depuis la Suisse.">
     <link rel="canonical" href="https://saharamotoride.ch/">
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6W4L26797"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X6W4L26797');
+    </script>
+
     <!-- Open Graph -->
     <meta property="og:title" content="Sahara Moto Ride | Voyage moto au Maroc — Désert, Atlas, riads authentiques">
     <meta property="og:description" content="Michel vous emmène dans le Maroc profond — désert, canyons, riads. Petit groupe, itinéraires reconnus à la main, encadrement expert depuis la Suisse.">
@@ -701,6 +710,80 @@
         .nav-active header#header.header-scrolled nav {
             top: 70px;
         }
+
+        /* Cookie banner */
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #1a1a1a;
+            color: #cccccc;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            z-index: 9999;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            border-top: 1px solid rgba(194,155,107,0.3);
+        }
+
+        #cookie-banner p {
+            margin: 0;
+            max-width: 750px;
+        }
+
+        #cookie-banner a {
+            color: var(--color-accent);
+            text-decoration: underline;
+        }
+
+        .cookie-btns {
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .cookie-btns button {
+            padding: 8px 18px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+            white-space: nowrap;
+        }
+
+        #cookie-accept {
+            background-color: var(--color-accent);
+            color: #000;
+        }
+
+        #cookie-refuse {
+            background-color: transparent;
+            color: #cccccc;
+            border: 1px solid rgba(255,255,255,0.2) !important;
+        }
+
+        #cookie-refuse:hover {
+            border-color: rgba(255,255,255,0.5) !important;
+            color: #ffffff;
+        }
+
+        #cookie-accept:hover {
+            background-color: #b38f1f;
+        }
+
+        @media (max-width: 768px) {
+            #cookie-banner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1191,6 +1274,36 @@
 
         </div>
     </footer>
+
+    <!-- Bannière cookies -->
+    <div id="cookie-banner" style="display:none;">
+        <p>
+            Ce site utilise Google Analytics pour analyser le trafic et améliorer votre expérience.
+            En continuant à naviguer, vous en êtes informé. 
+            <a href="conditions-generales.html">En savoir plus</a>
+        </p>
+        <div class="cookie-btns">
+            <button id="cookie-refuse">Refuser</button>
+            <button id="cookie-accept">Accepter</button>
+        </div>
+    </div>
+
+    <script>
+        // Cookie banner
+        (function() {
+            if (!localStorage.getItem('cookie_choice')) {
+                document.getElementById('cookie-banner').style.display = 'flex';
+            }
+            document.getElementById('cookie-accept').addEventListener('click', function() {
+                localStorage.setItem('cookie_choice', 'accepted');
+                document.getElementById('cookie-banner').style.display = 'none';
+            });
+            document.getElementById('cookie-refuse').addEventListener('click', function() {
+                localStorage.setItem('cookie_choice', 'refused');
+                document.getElementById('cookie-banner').style.display = 'none';
+            });
+        })();
+    </script>
 
     <script>
         const menuToggle = document.getElementById('menuToggle');
