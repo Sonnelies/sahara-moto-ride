@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -383,29 +383,16 @@
             max-width: 700px;
         }
 
-        /* --- Ce code définit l'apparence de ton nouveau texte --- */
         .badge-nouveau {
             display: block;
             font-size: 0.9rem;
             font-style: italic;
-            color: var(--color-accent); /* C'est l'ocre sable */
+            color: var(--color-accent);
             margin-bottom: 0.5rem;
             font-weight: 300;
             letter-spacing: 0.05em;
         }
 
-        /* --- Ce code définit l'apparence de ton nouveau texte --- */
-        .badge-nouveau {
-            display: block;
-            font-size: 0.9rem;
-            font-style: italic;
-            color: var(--color-accent); /* C'est l'ocre sable */
-            margin-bottom: 0.5rem;
-            font-weight: 300;
-            letter-spacing: 0.05em;
-        }
-
-        /* --- NOUVEAU STYLE À COLLER ICI --- */
         .section-horizons {
             padding: 60px 0;
             background-color: var(--color-bg-light); 
@@ -452,23 +439,11 @@
         .horizons-footer {
             font-size: 1.1rem;
             font-style: italic;
-            color: var(--color-accent); /* Couleur ocre sable */
+            color: var(--color-accent);
             font-weight: 400;
             max-width: 600px;
             margin: 0 auto;
         }
-        /* --- FIN DU STYLE --- */
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 50px;
-        }
-
-
-
-
-
 
         .features-grid {
             display: grid;
@@ -690,6 +665,10 @@
                 margin-top: 35px; 
                 padding-bottom: 40px;
             }
+
+            .formats-grid {
+                grid-template-columns: 1fr !important;
+            }
         }
 
         .nav-active nav {
@@ -807,9 +786,6 @@
             </nav>
 
             <div class="header-cta">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScqwFamBuROjh5sSbYkkgtrMvEjBJzqqcB8KiCBpK-dtSeZvw/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-header-postuler desktop-only">
-                    Je veux partir
-                </a>
                 <a href="tel:+41764584143" class="phone-icon-link" aria-label="Appeler Michel">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -820,17 +796,18 @@
     </header>
 
     <main>
+        <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
         <section class="hero">
             <div class="container">
 
                 <h1>Des dunes à perte de vue. Un riad au crépuscule.<br>Votre moto, vos souvenirs.</h1>
 
                 <p>Michel vous emmène dans le Maroc profond — celui qui ne figure dans aucun catalogue.</p>
-                <p style="font-size: 1rem; line-height: 1.7; opacity: 0.88; margin-bottom: 40px;">Il y a des voyages qu'on fait. Et des voyages dont on parle encore dix ans après.<br>Le désert à l'aube, les gorges du Dadès qui s'ouvrent devant la roue avant, un tajine servi dans une cour de terre ocre, le sourire d'un villageois qui n'a rien à vous vendre — voilà ce que Michel prépare, avec la rigueur suisse qu'on lui connaît et la passion qu'il n'arrive plus à cacher.</p>
+                <p style="font-size: 1rem; line-height: 1.7; opacity: 0.88; margin-bottom: 40px;">Il y a des voyages qu'on oublie en rentrant. Et ceux dont on parle encore dix ans après.<br>Le désert à l'aube, les gorges du Dadès qui s'ouvrent devant la roue avant, un tajine servi dans une cour de terre ocre, le sourire d'un villageois qui n'a rien à vous vendre — voilà ce que Michel prépare, avec la rigueur suisse qu'on lui connaît et la passion qu'il n'arrive plus à cacher.</p>
 
                 <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; opacity: 0.65; margin-bottom: 28px;">Six motos maximum &nbsp;·&nbsp; Itinéraires reconnus à la main &nbsp;·&nbsp; Départ garanti dès 4 motos</p>
                 <div class="hero-btns">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScqwFamBuROjh5sSbYkkgtrMvEjBJzqqcB8KiCBpK-dtSeZvw/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <a href="#contact" class="btn btn-primary">
                         Je veux partir
                     </a>
                     <a href="https://gamma.app/docs/Sahara-Moto-Ride-39zxibd5r7bwpcn" target="_blank" rel="noopener noreferrer" class="btn btn-outline desktop-only">
@@ -848,38 +825,39 @@
             </div>
         </section>
 
+        <!-- ═══════════════════════════════════════ VOYAGE ═══════════════════════════════════════ -->
         <section id="voyage" class="section-voyage">
           <div class="container">
               <header class="section-header">
-                 <span class="badge-nouveau">Route ou piste — à vous de choisir votre Maroc</span>
+                 <span class="badge-nouveau">Ni circuit touristique, ni aventure improvisée</span>
                  <h2>Le voyage</h2>
-                 <p class="section-intro">Deux formats, une même exigence : vous faire vivre le Maroc profond, loin des circuits standardisés.</p>
+                 <p class="section-intro">Deux formats, une même exigence : vous faire vivre le Maroc que les agences ne montrent pas — parce qu'elles ne le connaissent pas.</p>
               </header>
              <div class="features-grid">
                  <article class="feature-card">
                         <h3>Six motos. Pas une de plus.</h3>
-                        <p>Ce n'est pas une contrainte commerciale — c'est une décision de fond. Un petit groupe se déplace vite, s'adapte au terrain, garde une cohésion naturelle. Chacun bénéficie d'un encadrement réel, pas d'une présence lointaine en tête de convoi. Pour les groupes privés constitués, des arrangements spécifiques sont possibles sur demande.</p>
+                        <p>Ce n'est pas une contrainte commerciale — c'est un choix. Un petit groupe roule vite, s'adapte au terrain, garde une cohésion naturelle. Chacun reçoit un encadrement réel, pas une présence lointaine en tête de convoi de vingt motos. Pour les groupes privés constitués, des arrangements spécifiques sont possibles sur demande.</p>
                   </article>
                  <article class="feature-card">
                         <h3>Votre moto. Votre rythme.</h3>
-                        <p>Vous roulez avec votre propre machine — celle que vous connaissez, celle avec laquelle vous avez confiance. Sur l'asphalte des cols de l'Atlas ou sur les pistes caillouteuses du Sud, c'est toujours vous qui pilotez. Michel gère le reste.</p>
+                        <p>Vous roulez avec votre propre machine — celle que vous connaissez, celle avec laquelle vous avez confiance. Pas de moto de location que vous découvrez le matin du départ. Sur l'asphalte des cols de l'Atlas ou sur les pistes caillouteuses du Sud, c'est vous qui pilotez. Michel gère tout le reste.</p>
                     </article>
                  <article class="feature-card">
                         <h3>Un Maroc que peu voient.</h3>
-                        <p>Les itinéraires sont reconnus par Michel lui-même, chaque saison. Vallées isolées, kasbahs de terre rouge, villages hors des radars touristiques, nuits sous un ciel de désert — ce Maroc-là ne se trouve pas dans les catalogues.</p>
+                        <p>Les itinéraires sont reconnus par Michel lui-même, chaque saison, avant d'emmener un groupe. Pas une trace GPX téléchargée en ligne. Vallées isolées, kasbahs de terre rouge, villages hors des radars touristiques, nuits sous un ciel de désert — ce Maroc-là ne se réserve pas sur un catalogue.</p>
                     </article>
                 </div>
 
                 <!-- Deux formats -->
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 60px;">
+                <div class="formats-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 60px;">
                     <div style="background: white; padding: 40px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.06); border-top: 4px solid var(--color-accent);">
                         <h3 style="margin-bottom: 16px;">🏍 Expédition Route</h3>
-                        <p style="color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 16px;">Le plaisir de rouler, sans compromis. Cols d'altitude, routes panoramiques qui épousent le relief de l'Atlas, villages de montagne où l'on s'arrête le temps d'un thé — l'Expédition Route, c'est le Maroc dans toute sa diversité, sur du beau goudron. Les haltes sont choisies, le rythme est maîtrisé. Idéal pour rouler à deux, avec passager, sans renoncer à rien.</p>
+                        <p style="color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 16px;">Des cols d'altitude où le goudron épouse chaque virage de l'Atlas. Des villages de montagne où l'on s'arrête le temps d'un thé, sans que personne ne regarde sa montre. L'Expédition Route, c'est le Maroc dans toute sa diversité — à un rythme que vous choisissez, pas celui d'un convoi. Idéal pour rouler à deux, avec passager, sans renoncer à rien.</p>
                         <p style="font-size: 0.9rem; color: var(--color-text);">✓ Pilote seul ou avec passager<br>✓ Trail, enduro ou routière ≥ 600cc<br>✓ 13 à 15 jours au Maroc (traversée ferry non comprise)</p>
                     </div>
                     <div style="background: white; padding: 40px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.06); border-top: 4px solid var(--color-primary);">
                         <h3 style="margin-bottom: 16px;">⛰️ Raid Piste</h3>
-                        <p style="color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 16px;">Le silence comme seul horizon. Sur la piste, le Maroc reprend ses droits. Plus d'asphalte, plus de panneaux — juste la terre ocre, les canyons creusés dans la roche, et un silence si profond qu'on entend sa propre respiration. Vous roulez seul au milieu de nulle part, dans des paysages que peu de gens ont vus. Une immersion totale dans le Maroc sauvage.</p>
+                        <p style="color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 16px;">Plus d'asphalte, plus de panneaux — juste la terre ocre, les canyons creusés dans la roche, et un silence si profond qu'on entend sa propre respiration. Sur la piste, le Maroc reprend ses droits. Vous roulez seul au milieu de nulle part, dans des paysages que la plupart des motards n'imaginent même pas. Une immersion totale dans le Maroc sauvage.</p>
                         <p style="font-size: 0.9rem; color: var(--color-text);">✓ Solo uniquement (sans passager)<br>✓ Trail ou enduro ≥ 300cc<br>✓ 15 à 16 jours au Maroc (traversée ferry non comprise)</p>
                     </div>
                 </div>
@@ -891,11 +869,12 @@
             </div>
         </section>
 
+        <!-- ═══════════════════════════════════════ TÉMOIGNAGES ═══════════════════════════════════════ -->
         <section id="temoignages" style="background-color: #f7f3ee; padding: 100px 20px;">
             <div class="container">
                 <header class="section-header" style="text-align: center;">
                     <h2>Ce qu'ils en disent</h2>
-                    <p class="section-intro" style="margin: 0 auto; max-width: 600px;">8 avis Google · 5 étoiles · Des motards qui reviennent.</p>
+                    <p class="section-intro" style="margin: 0 auto; max-width: 600px;">8 avis Google · 5 étoiles · Des motards qui reviennent — certains pour la troisième fois.</p>
                 </header>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 60px;">
 
@@ -935,24 +914,23 @@
             </div>
         </section>
 
+        <!-- ═══════════════════════════════════════ GUIDE ═══════════════════════════════════════ -->
         <section id="guide" class="guide-section">
             <div class="container">
                 <div class="guide-content">
                     <div class="guide-text">
                         <header class="section-title">
-
                         <h2>Michel — fondateur et guide</h2>
                         </header>
-
 
                         <h3>Le Maroc, il le connaît de l'intérieur.</h3>
                             <p>Tout commence en 2002. Michel co-fonde un groupement de motards au sein de l'administration vaudoise — et avec eux, il prend le ferry pour Tanger. Premier souvenir de l'autre côté : des routes qui s'enroulent dans des paysages que personne ne lui avait décrits. Ce jour-là, quelque chose se fixe.</p>
                             <p>Il revient. Puis revient encore. Six raids complets à travers le Maroc — du nord au désert, par tous les visages de l'Atlas.</p>
-                            <p>Mais ce qui distingue vraiment Michel, ce n'est pas le nombre de kilomètres parcourus. C'est ce qu'il a fait entre deux. Mandaté par un bailleur de fonds allemand, il passe trois ans au Maroc comme expert international en formation professionnelle. Avec son équipe, il forme plusieurs centaines de tuteurs en entreprise dans les six régions du pays et contribue à mettre en place un système national d'assurance qualité de la formation professionnelle. Trois ans à vivre le Maroc de l'intérieur — pas depuis un hôtel, pas depuis un circuit touristique.</p>
+                            <p>Mais ce qui distingue vraiment Michel, ce n'est pas le nombre de kilomètres parcourus. C'est ce qu'il a fait entre deux. Mandaté comme expert international, il passe trois ans sur place — pas dans un hôtel, pas sur un circuit touristique. Trois ans à vivre et travailler dans les six régions du pays, à sillonner des routes que la plupart des guides ne connaissent pas.</p>
                             <p>Pendant ces années, le bouche-à-oreille fait son chemin. Des motards de Suisse romande apprennent qu'il organise des raids à titre privé. Ils demandent à participer. Il dit non — le moment n'est pas encore venu.</p>
                             <p>C'est son épouse qui finit par lui dire ce que tout le monde pensait déjà : <em>"Tu connais ce pays mieux que personne — propose ces expéditions."</em> SaharaMotoRide est née de là.</p>
                         <ul class="guide-list">
-                        <li>Connaît le Maroc pour y avoir vécu et travaillé trois ans, dans les six régions du pays.</li>
+                        <li>A vécu et travaillé trois ans au Maroc, dans les six régions du pays.</li>
                         <li>Reconnaît les itinéraires lui-même, chaque saison, avant d'emmener un groupe.</li>
                         <li>Répond à toutes vos questions avant le départ : matériel, pneus, argent liquide, eSIM, bons plans locaux.</li>
                         <li>Sélectionne chaque participant — parce qu'un groupe homogène, c'est un voyage réussi.</li>
@@ -978,80 +956,77 @@
             </div>
         </section>
 
+        <!-- ═══════════════════════════════════════ ORGANISATION ═══════════════════════════════════════ -->
         <section id="organisation">
             <div class="container">
                 <header class="section-header">
                     <h2>Organisation depuis la Suisse</h2>
-                    <p class="section-intro">Plusieurs mois de préparation précèdent chaque départ. Ce que vous vivez sur le terrain est le résultat d'un travail invisible — minutieux, méthodique, fait bien avant que vous enfourchiez votre moto.</p>
+                    <p class="section-intro">Le Maroc à moto, n'importe qui peut le tenter. Revenir en disant "c'est le meilleur voyage de ma vie" — ça demande des mois de préparation invisible. C'est exactement ce que Michel fait avant que vous enfourchiez votre moto.</p>
                 </header>
                 <div class="info-grid">
                     <div class="info-block">
-                        <h3>Préparé par quelqu'un qui y est allé</h3>
-                        <p>Michel reconnaît les itinéraires lui-même, chaque saison, avant d'emmener un groupe. Les pistes, les cols, les hébergements, les points de ravitaillement — il les a parcourus, testés, validés. Ce que vous suivez n'est pas une trace GPX achetée en ligne. C'est un itinéraire vécu.</p>
+                        <h3>Chaque piste a été roulée avant vous</h3>
+                        <p>Michel reconnaît les itinéraires lui-même, chaque saison. Les cols, les hébergements, les points de ravitaillement — il les a parcourus, testés, validés. Ce que vous suivez n'est pas une trace GPX achetée sur internet ni un road-book recopié d'un forum. C'est un itinéraire que quelqu'un a vécu — et qu'il a choisi de vous faire vivre.</p>
                     </div>
                     <div class="info-block">
                         <h3>Rigueur suisse, terrain marocain</h3>
-                        <p>Basé à Bâle, Michel organise des expéditions pour des motards suisses, français et belges. Il apporte à chaque départ l'exigence qu'on attend d'une organisation rigoureuse — clarté, fiabilité, anticipation. Réservations confirmées, dossiers préparés, formalités coordonnées. Vous partez l'esprit libre. C'est le but.</p>
+                        <p>Basé à Bâle, Michel organise des expéditions pour des motards suisses, français et belges. Il apporte à chaque départ ce que le Maroc ne pardonne pas d'oublier : anticipation, clarté, fiabilité. Hébergements confirmés, dossiers bouclés, formalités coordonnées. Vous enfourchez votre moto l'esprit libre — c'est tout l'objectif.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ═══════════════════════════════════════ SÉCURITÉ ═══════════════════════════════════════ -->
         <section id="securite" style="background-color:#f7f3ee;">
             <div class="container">
                 <header class="section-header" style="text-align:center;">
                     <h2>Sécurité et gestion des imprévus</h2>
                     <p class="section-intro" style="margin:0 auto 3rem; max-width:700px;">
-                        Le désert impose l'imprévu. Une organisation sérieuse élimine l'improvisation. Michel a pensé à tout — matériel à emporter, assurances à souscrire, documents à préparer — pour que vous arriviez au port de Sète sans questions en suspens. Sur le terrain, il gère. Vous roulez.
+                        Le désert impose l'imprévu — une crevaison à 200 km du premier village, un oued qui déborde, un vent de sable qui efface la piste. La différence entre une aventure et un problème, c'est la personne qui vous accompagne. Michel a pensé à chaque scénario pour que vous n'ayez à penser qu'à une chose : rouler.
                     </p>
                 </header>
                     <div class="info-grid">
                     <div class="info-block">
                         <h3>Urgences médicales</h3>
-                        <p>Michel dispose d'une carte SIM marocaine active et connaît les numéros d'urgence locaux. Chaque participant voyage avec une assurance santé et rapatriement adaptée — le livret ETI pour les Suisses en est l'exemple le plus courant. En cas de besoin, la coordination est immédiate.</p>
+                        <p>Michel est joignable à tout moment grâce à une carte SIM marocaine active. Il connaît les numéros d'urgence locaux et les établissements de soin dans chaque zone traversée. Chaque participant voyage avec une assurance santé et rapatriement adaptée — le livret ETI pour les Suisses en est l'exemple le plus courant. En cas de besoin, la coordination est immédiate — pas d'hésitation, pas de temps perdu.</p>
                     </div>
                     <div class="info-block">
                         <h3>Pannes et mécanique</h3>
-                        <p>Crevaisons, soudures, petites réparations — les villages marocains ont souvent tout ce qu'il faut, et Michel sait où frapper. Pour les problèmes sérieux, le réseau de concessionnaires dans les grandes villes prend le relais. Rien n'est laissé au hasard.</p>
+                        <p>Une crevaison en plein désert, ça n'arrive pas qu'aux autres. Mais les villages marocains ont souvent tout ce qu'il faut — et Michel sait exactement où frapper. Pour les problèmes plus sérieux, le réseau de concessionnaires dans les grandes villes prend le relais. En vingt ans de raids, Michel a vu tous les scénarios — et chacun a trouvé sa solution.</p>
                     </div>
                     <div class="info-block">
                         <h3>Itinéraires adaptatifs</h3>
-                        <p>Les conditions climatiques et l'état des pistes évoluent. Michel ajuste l'itinéraire en temps réel si nécessaire — sans jamais sacrifier la cohérence du voyage. Cette intelligence de terrain ne s'improvise pas : elle se construit sur des années de présence au Maroc.</p>
+                        <p>Les conditions climatiques et l'état des pistes changent sans prévenir. Ce qui était praticable la veille peut ne plus l'être le lendemain. Michel ajuste l'itinéraire en temps réel — sans jamais sacrifier la cohérence du voyage. Cette capacité à lire le terrain et à décider vite, ça ne s'apprend pas sur YouTube. Ça se construit sur des années de présence au Maroc.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-
-
-
-
+        <!-- ═══════════════════════════════════════ SÉLECTION ═══════════════════════════════════════ -->
         <section id="selection">
         <div class="container">
             <header class="section-header" style="text-align:center;">
                 <h2>Rejoindre une expédition</h2>
                 <p class="section-intro" style="margin:0 auto 3rem; max-width:700px;">
-                    Pas de réservation en ligne en trois clics. Dans un groupe limité à six motos, chaque personnalité compte. Le processus est simple — mais réel.
+                    Pas de réservation en trois clics. Dans un groupe limité à six motos, chaque personnalité compte. Michel ne remplit pas des places — il constitue une équipe.
                </p>
             </header>
             <div class="info-grid">
                 <div class="info-block">
                     <h3>1. Prise de contact</h3>
-                    <p>Vous remplissez un formulaire en ligne : votre expérience moto, votre machine, vos attentes et la saison qui vous intéresse. Cinq minutes, pas de formalisme.</p>
-            </div>
+                    <p>Vous remplissez un formulaire court : votre expérience moto, votre machine, vos attentes et la saison qui vous intéresse. Cinq minutes, pas de formalisme — juste ce qu'il faut pour que Michel comprenne votre profil.</p>
+                </div>
                 <div class="info-block">
                     <h3>2. Entretien avec Michel</h3>
-                    <p>Un échange direct, humain, sans script. Michel vérifie que le projet vous correspond — et vous posez toutes vos questions. C'est un dialogue, pas une sélection à sens unique.</p>
+                    <p>Un échange direct, humain, sans script. Michel vérifie que le projet vous correspond — et vous posez toutes vos questions. C'est un dialogue, pas un interrogatoire. Si le courant passe, on avance.</p>
                 </div>
                 <div class="info-block">
                     <h3>3. Confirmation</h3>
-                    <p>Si le profil correspond, votre place est confirmée. Le groupe se constitue avec soin — homogène, motivé, prêt à rouler ensemble.</p>
+                    <p>Si le profil correspond, votre place est confirmée. Le groupe se constitue avec soin — homogène, motivé, prêt à rouler ensemble. C'est cette sélection qui fait la différence entre un voyage de plus et un voyage dont on reparle.</p>
                 </div>
                 <div class="info-block">
                     <h3>4. Dossier de préparation</h3>
-                    <p>Vous recevez toutes les informations pratiques : équipement, documents, logistique, calendrier. L'expédition commence bien avant le premier tour de roue.</p>
+                    <p>Vous recevez toutes les informations pratiques : équipement, documents, logistique, calendrier. L'expédition commence bien avant le premier tour de roue — et vous arrivez au ferry sans une seule question en suspens.</p>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 50px;">
@@ -1062,6 +1037,7 @@
         </div>
         </section>
 
+        <!-- ═══════════════════════════════════════ CHIFFRES ═══════════════════════════════════════ -->
         <section id="chiffres" style="background-color:#ffffff;">
             <div class="container">
                 <header class="section-header" style="text-align:center;">
@@ -1073,12 +1049,8 @@
                         <p>Motos maximum par expédition<br><span style="font-size: 0.85rem; color: var(--color-text-light);">Départ garanti à partir de 4</span></p>
                     </div>
                     <div>
-
-
                         <h3 style="font-size: 2.8rem; color: var(--color-accent);">4</h3>
                         <p>Départs programmés par année<br><span style="font-size: 0.85rem; color: var(--color-text-light);">Route ou Piste, printemps et automne</span></p>
-
-
                     </div>
                     <div>
                         <h3 style="font-size: 2.8rem; color: var(--color-accent);">13–15</h3>
@@ -1092,27 +1064,22 @@
             </div>
         </section>
 
+        <!-- ═══════════════════════════════════════ TARIF ═══════════════════════════════════════ -->
         <section id="tarif" class="tarif-section">
     <div class="container">
-
 
         <header class="section-header" style="text-align: center; max-width: 700px; margin: 0 auto 60px;">
             <h2>Investissement</h2>
             <p style="font-size: 1.15rem; color: var(--color-text); line-height: 1.8; margin-bottom: 16px;">
-                Ce voyage, vous pourriez l'organiser seul. Trouver les itinéraires, repérer les hébergements, gérer les imprévus, anticiper les pistes, négocier sur place, porter la responsabilité du groupe.
+                Ce voyage, vous pourriez l'organiser seul. Trouver les itinéraires, repérer les hébergements, gérer les imprévus, anticiper les pistes, négocier sur place, porter la responsabilité du groupe. Beaucoup l'ont tenté. Peu recommencent.
             </p>
             <p style="font-size: 1.15rem; color: var(--color-text); line-height: 1.8; margin-bottom: 16px;">
                 Ou vous pouvez enfourcher votre moto, et laisser Michel s'occuper du reste.
             </p>
             <p style="font-size: 1.1rem; font-style: italic; color: var(--color-accent);">
-                Ce que vous achetez ici, ce n'est pas une prestation. C'est un rêve sans charge mentale — une aventure que personne ne vit seul.
+                Ce que vous achetez ici, ce n'est pas une prestation. C'est deux semaines sans charge mentale — une aventure que personne ne vit seul de cette manière.
             </p>
         </header>
-
-
-
-
-
 
         <div class="tarif-box" style="max-width: 720px;">
             <span class="limited-badge">GROUPE VOLONTAIREMENT RESTREINT</span>
@@ -1211,6 +1178,7 @@
 
 
 
+        <!-- ═══════════════════════════════════════ CONTACT ═══════════════════════════════════════ -->
         <section id="contact">
             <div class="container">
                 <div class="contact-layout">
@@ -1258,15 +1226,12 @@
             <p>Welschmattstrasse 41, 4055 Basel, Suisse | <a href="tel:+41764584143">+41 76 458 41 43</a></p>
             <p style="margin-top: 15px;"><a href="conditions-generales.html">Conditions générales</a></p>
 
-
 <p style="margin-top: 25px; opacity: 0.7;">
   &copy; 2026 Sahara Moto Ride. Tous droits réservés. | Site réalisé par 
   <a href="https://elite360digital.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">
     Elite 360 Digital
   </a>
 </p>
-
-
 
         </div>
     </footer>
