@@ -19,14 +19,42 @@
   "name": "Sahara Moto Ride",
   "@id": "https://saharamotoride.ch/",
   "url": "https://saharamotoride.ch/",
+  "image": "https://saharamotoride.ch/assets/images/index-hero.jpg",
   "telephone": "+41764584143",
+  "priceRange": "1500-4500 CHF",
+  "founder": { "@type": "Person", "name": "Michel Etienne" },
   "address": { "@type": "PostalAddress", "streetAddress": "Welschmattstrasse 41", "addressLocality": "Basel", "postalCode": "4055", "addressCountry": "CH" },
+  "geo": { "@type": "GeoCoordinates", "latitude": "47.5617822", "longitude": "7.563273" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "20:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "10:00", "closes": "18:00" }
+  ],
+  "sameAs": [
+    "https://www.google.com/maps/place/?q=place_id:ChIJv2dsvGTTUKERv2s8KxgeDlc",
+    "https://www.facebook.com/profile.php?id=61584715593150",
+    "https://www.instagram.com/saharamotoride/",
+    "https://www.youtube.com/@SaharaMotoRide",
+    "https://www.tiktok.com/@saharamotoride"
+  ],
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "8" }
 }
 </script>
 <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Google Analytics (chargé conditionnellement après acceptation des cookies) -->
+<script id="ga-script">
+if (localStorage.getItem('cookie_choice') === 'accepted') {
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-X6W4L26797';
+  document.head.appendChild(script);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X6W4L26797', { 'anonymize_ip': true });
+}
+</script>
 <style>
 :root{--primary:#B4552D;--secondary:#E4D5BE;--sand:#FAF6EF;--dark:#26201A;--accent:#c9a227;--cta:#C2410C;}
 *{box-sizing:border-box;}
@@ -106,6 +134,9 @@ footer.site-footer{background:var(--dark);color:#D1D5DB;padding-top:56px;padding
 .footer-text{font-size:15px;line-height:1.6;margin-bottom:6px;}
 .footer-col{display:flex;flex-direction:column;gap:10px;}
 .footer-link{color:#D1D5DB;text-decoration:none;font-size:15px;}
+.footer-social{display:flex;gap:16px;margin-top:8px;}
+.footer-social-link{color:#D1D5DB;display:inline-flex;transition:color .15s ease;}
+.footer-social-link:hover{color:#fff;}
 .footer-bottom{max-width:1200px;margin:40px auto 0;padding:20px 24px 0;border-top:1px solid #3A322A;font-size:13px;color:#9C948A;}
 .footer-credit{color:#9C948A;text-decoration:underline;}
 .sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;gap:10px;padding:10px 14px;background:#fff;box-shadow:0 -2px 10px rgba(38,32,26,.12);transform:translateY(100%);transition:transform .25s ease;}
@@ -143,6 +174,21 @@ footer.site-footer{background:var(--dark);color:#D1D5DB;padding-top:56px;padding
 .hero-quote{color:#F5EFE6;font-size:15px;font-style:italic;margin:0 auto;max-width:480px;}
 .hero-quote-author{color:rgba(255,255,255,.75);font-size:13px;margin:0;}
 .small-outline-btn{margin-top:8px;font-size:13px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.6);border-radius:8px;padding:8px 14px;text-decoration:none;}
+/* === COOKIE BANNER === */
+#cookie-banner{display:none;position:fixed;bottom:0;left:0;right:0;background:#26201A;color:#fff;padding:20px 24px;z-index:9999;flex-direction:row;align-items:center;justify-content:space-between;gap:20px;box-shadow:0 -2px 8px rgba(0,0,0,0.15);}
+#cookie-banner p{margin:0;font-size:14px;line-height:1.5;flex:1;}
+.cookie-btns{display:flex;gap:12px;flex-shrink:0;}
+.cookie-btns button{padding:10px 20px;border:none;border-radius:6px;font-weight:600;font-size:14px;cursor:pointer;white-space:nowrap;transition:all 0.3s ease;}
+#cookie-refuse{background:#E4D5BE;color:#26201A;}
+#cookie-refuse:hover{background:#d4c5ae;}
+#cookie-accept{background:#C2410C;color:#fff;}
+#cookie-accept:hover{background:#a83109;}
+@media (max-width:768px){
+  #cookie-banner{flex-direction:column;align-items:stretch;text-align:center;}
+  #cookie-banner p{margin-bottom:12px;}
+  .cookie-btns{flex-direction:column;width:100%;}
+  .cookie-btns button{width:100%;}
+}
 </style>
 </head>
 <body>
@@ -323,6 +369,15 @@ footer.site-footer{background:var(--dark);color:#D1D5DB;padding-top:56px;padding
           <a href="conditions-generales.html" class="footer-link">Conditions générales</a>
         </div>
       </div>
+      <div>
+        <div class="footer-heading">Suivez-nous</div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61584715593150" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/saharamotoride/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@SaharaMotoRide" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="footer-social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></a>
+          <a href="https://www.tiktok.com/@saharamotoride" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="footer-social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+        </div>
+      </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Sahara Moto Ride. Tous droits réservés.</span>
@@ -334,6 +389,18 @@ footer.site-footer{background:var(--dark);color:#D1D5DB;padding-top:56px;padding
     <a href="tel:+41764584143" class="sticky-btn sticky-call">Appeler</a>
     <a href="contact.html" class="sticky-btn sticky-action">Je veux partir</a>
   </div>
+
+  <!-- Bannière cookies -->
+  <div id="cookie-banner">
+    <p>
+      🍪 Ce site utilise des cookies pour améliorer votre expérience. En continuant à naviguer, vous acceptez notre utilisation des cookies conformément à la législation suisse (nLPD) et européenne (RGPD).
+    </p>
+    <div class="cookie-btns">
+      <button id="cookie-refuse">Refuser</button>
+      <button id="cookie-accept">Accepter</button>
+    </div>
+  </div>
+
 <script>
 document.addEventListener('scroll', function(){
   var bar = document.getElementById('stickyBar');
@@ -353,6 +420,32 @@ function toggleFaq(id){
     icon.style.transform = 'rotate(45deg)';
   }
 }
+
+// Cookie banner management
+(function() {
+    if (!localStorage.getItem('cookie_choice')) {
+        document.getElementById('cookie-banner').style.display = 'flex';
+    }
+    document.getElementById('cookie-accept').addEventListener('click', function() {
+        localStorage.setItem('cookie_choice', 'accepted');
+        document.getElementById('cookie-banner').style.display = 'none';
+        // Charger GA4 après acceptation
+        if (!window.dataLayer) {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-X6W4L26797';
+            document.head.appendChild(script);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X6W4L26797', { 'anonymize_ip': true });
+        }
+    });
+    document.getElementById('cookie-refuse').addEventListener('click', function() {
+        localStorage.setItem('cookie_choice', 'refused');
+        document.getElementById('cookie-banner').style.display = 'none';
+    });
+})();
 </script>
 </body>
 </html>
