@@ -42,18 +42,17 @@
 <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<!-- Google Analytics (chargé conditionnellement après acceptation des cookies) -->
-<script id="ga-script">
-if (localStorage.getItem('cookie_choice') === 'accepted') {
-  var script = document.createElement('script');
-  script.async = true;
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-X6W4L26797';
-  document.head.appendChild(script);
+<!-- Google Analytics (script chargé immédiatement, config après acceptation) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X6W4L26797"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-X6W4L26797', { 'anonymize_ip': true });
-}
+  
+  // Config SEULEMENT si déjà accepté au chargement
+  if (localStorage.getItem('cookie_choice') === 'accepted') {
+    gtag('config', 'G-X6W4L26797', { 'anonymize_ip': true });
+  }
 </script>
 <style>
 :root{--primary:#B4552D;--secondary:#E4D5BE;--sand:#FAF6EF;--dark:#26201A;--accent:#c9a227;--cta:#C2410C;}
@@ -429,17 +428,8 @@ function toggleFaq(id){
     document.getElementById('cookie-accept').addEventListener('click', function() {
         localStorage.setItem('cookie_choice', 'accepted');
         document.getElementById('cookie-banner').style.display = 'none';
-        // Charger GA4 après acceptation
-        if (!window.dataLayer) {
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-X6W4L26797';
-            document.head.appendChild(script);
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-X6W4L26797', { 'anonymize_ip': true });
-        }
+        // Initialiser GA4 immédiatement après acceptation
+        gtag('config', 'G-X6W4L26797', { 'anonymize_ip': true });
     });
     document.getElementById('cookie-refuse').addEventListener('click', function() {
         localStorage.setItem('cookie_choice', 'refused');
