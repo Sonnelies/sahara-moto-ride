@@ -42,17 +42,13 @@
 <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<!-- Google Analytics (script chargé immédiatement, config après acceptation) -->
+<!-- Google Analytics – chargé pour tous les visiteurs -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6W4L26797"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  
-  // Config SEULEMENT si déjà accepté au chargement
-  if (localStorage.getItem('cookie_choice') === 'accepted') {
-    gtag('config', 'G-X6W4L26797', { 'anonymize_ip': true });
-  }
+  gtag('config', 'G-X6W4L26797', { 'anonymize_ip': true });
 </script>
 <style>
 :root{--primary:#B4552D;--secondary:#E4D5BE;--sand:#FAF6EF;--dark:#26201A;--accent:#c9a227;--cta:#C2410C;}
@@ -173,21 +169,6 @@ footer.site-footer{background:var(--dark);color:#D1D5DB;padding-top:56px;padding
 .hero-quote{color:#F5EFE6;font-size:15px;font-style:italic;margin:0 auto;max-width:480px;}
 .hero-quote-author{color:rgba(255,255,255,.75);font-size:13px;margin:0;}
 .small-outline-btn{margin-top:8px;font-size:13px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.6);border-radius:8px;padding:8px 14px;text-decoration:none;}
-/* === COOKIE BANNER === */
-#cookie-banner{display:none;position:fixed;bottom:0;left:0;right:0;background:#26201A;color:#fff;padding:20px 24px;z-index:9999;flex-direction:row;align-items:center;justify-content:space-between;gap:20px;box-shadow:0 -2px 8px rgba(0,0,0,0.15);}
-#cookie-banner p{margin:0;font-size:14px;line-height:1.5;flex:1;}
-.cookie-btns{display:flex;gap:12px;flex-shrink:0;}
-.cookie-btns button{padding:10px 20px;border:none;border-radius:6px;font-weight:600;font-size:14px;cursor:pointer;white-space:nowrap;transition:all 0.3s ease;}
-#cookie-refuse{background:#E4D5BE;color:#26201A;}
-#cookie-refuse:hover{background:#d4c5ae;}
-#cookie-accept{background:#C2410C;color:#fff;}
-#cookie-accept:hover{background:#a83109;}
-@media (max-width:768px){
-  #cookie-banner{flex-direction:column;align-items:stretch;text-align:center;}
-  #cookie-banner p{margin-bottom:12px;}
-  .cookie-btns{flex-direction:column;width:100%;}
-  .cookie-btns button{width:100%;}
-}
 </style>
 </head>
 <body>
@@ -381,23 +362,13 @@ footer.site-footer{background:var(--dark);color:#D1D5DB;padding-top:56px;padding
     <div class="footer-bottom">
       <span>© 2026 Sahara Moto Ride. Tous droits réservés.</span>
       <span> | Site réalisé par <a href="https://elite360digital.com/" target="_blank" rel="noopener noreferrer" class="footer-credit">Elite 360 Digital</a></span>
+      <span style="opacity:0.55;"> | v1.1 – 02.09.2026</span>
     </div>
   </footer>
 
   <div class="sticky-bar" id="stickyBar">
     <a href="tel:+41764584143" class="sticky-btn sticky-call">Appeler</a>
     <a href="contact.html" class="sticky-btn sticky-action">Je veux partir</a>
-  </div>
-
-  <!-- Bannière cookies -->
-  <div id="cookie-banner">
-    <p>
-      🍪 Ce site utilise des cookies pour améliorer votre expérience. En continuant à naviguer, vous acceptez notre utilisation des cookies conformément à la législation suisse (nLPD) et européenne (RGPD).
-    </p>
-    <div class="cookie-btns">
-      <button id="cookie-refuse">Refuser</button>
-      <button id="cookie-accept">Accepter</button>
-    </div>
   </div>
 
 <script>
@@ -420,22 +391,6 @@ function toggleFaq(id){
   }
 }
 
-// Cookie banner management
-(function() {
-    if (!localStorage.getItem('cookie_choice')) {
-        document.getElementById('cookie-banner').style.display = 'flex';
-    }
-    document.getElementById('cookie-accept').addEventListener('click', function() {
-        localStorage.setItem('cookie_choice', 'accepted');
-        document.getElementById('cookie-banner').style.display = 'none';
-        // Initialiser GA4 immédiatement après acceptation
-        gtag('config', 'G-X6W4L26797', { 'anonymize_ip': true });
-    });
-    document.getElementById('cookie-refuse').addEventListener('click', function() {
-        localStorage.setItem('cookie_choice', 'refused');
-        document.getElementById('cookie-banner').style.display = 'none';
-    });
-})();
 </script>
 </body>
 </html>
