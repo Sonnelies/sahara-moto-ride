@@ -170,11 +170,33 @@ footer.site-footer{background:var(--dark);color:#D1D5DB;padding-top:56px;padding
 .hero-quote-author{color:rgba(255,255,255,.75);font-size:13px;margin:0;}
 .small-outline-btn{margin-top:8px;font-size:13px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.6);border-radius:8px;padding:8px 14px;text-decoration:none;}
 /* Bande Dakar 2028 */
-.dakar-band{background:var(--secondary);border-top:3px solid var(--accent);padding:18px 24px;}
-.dakar-band p{max-width:1200px;margin:0 auto;text-align:center;font-size:15px;line-height:1.6;color:#3A322A;}
-.dakar-band strong{color:var(--dark);font-weight:600;}
-.dakar-band a{color:var(--primary);font-weight:600;text-decoration:none;white-space:nowrap;margin-left:6px;}
-.dakar-band a:hover{text-decoration:underline;}
+.dakar-band{background:linear-gradient(110deg,#8E3F1F 0%,var(--primary) 55%,#C9762F 100%);padding:40px 24px;}
+.dakar-band-inner{max-width:1100px;margin:0 auto;text-align:center;}
+.dakar-band-eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#F6E3C8;margin:0 0 10px;}
+.dakar-band h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(26px,3.6vw,38px);line-height:1.15;color:#fff;margin:0 0 18px;}
+.dakar-band-facts{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin:0 0 22px;}
+.dakar-band-fact{color:#fff;font-size:14px;}
+.dakar-band-fact strong{display:block;font-family:'Fraunces',serif;font-size:24px;}
+.dakar-band-btn{display:inline-flex;align-items:center;min-height:48px;padding:12px 26px;border-radius:10px;background:#fff;color:var(--primary);font-weight:600;font-size:15px;text-decoration:none;}
+.dakar-band-btn:hover{background:var(--sand);}
+/* Pastille Dakar 2028 (hero) */
+.dakar-badge{position:absolute;z-index:2;top:32px;right:32px;width:160px;height:160px;border-radius:50%;background:linear-gradient(135deg,#8E3F1F,var(--primary) 55%,#C9762F);color:#fff;text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.35);border:3px solid rgba(255,255,255,.85);transition:transform .2s ease;}
+.dakar-badge:hover{transform:scale(1.05);}
+.dakar-badge::before{content:"";position:absolute;inset:-10px;border-radius:50%;border:2px solid rgba(201,162,39,.8);animation:dakarPulse 2.4s ease-out infinite;}
+@keyframes dakarPulse{0%{transform:scale(.95);opacity:1}100%{transform:scale(1.18);opacity:0}}
+.dakar-badge-top{font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#F6E3C8;}
+.dakar-badge-title{font-family:'Fraunces',serif;font-weight:700;font-size:30px;line-height:1;margin-top:4px;}
+.dakar-badge-year{font-family:'Fraunces',serif;font-weight:700;font-size:23px;line-height:1.1;color:#F6E3C8;}
+.dakar-badge-sub{font-size:11px;margin-top:6px;}
+@media (max-width:1399px){
+  .dakar-badge{top:auto;bottom:24px;right:20px;width:116px;height:116px;border-width:2px;}
+  .dakar-badge-top{font-size:8px;}
+  .dakar-badge-title{font-size:22px;}
+  .dakar-badge-year{font-size:17px;}
+  .dakar-badge-sub{display:none;}
+}
+@media (max-width:899px){.dakar-badge{display:none;}}
+@media (prefers-reduced-motion:reduce){.dakar-badge::before{animation:none;opacity:0;}}
 </style>
 </head>
 <body>
@@ -236,12 +258,28 @@ footer.site-footer{background:var(--dark);color:#D1D5DB;padding-top:56px;padding
       <a href="https://search.google.com/local/reviews?placeid=ChIJv2dsvGTTUKERv2s8KxgeDlc" target="_blank" rel="noopener noreferrer" class="small-outline-btn">Voir tous les avis Google</a>
     </div>
   </div>
+  <a class="dakar-badge" href="https://dakar-2028-smr-3ivelod.gamma.site/" target="_blank" rel="noopener noreferrer" aria-label="Nouveau : projet Dakar 2028, de la Suisse au lac Rose">
+    <span class="dakar-badge-top">Nouveau</span>
+    <span class="dakar-badge-title">Dakar</span>
+    <span class="dakar-badge-year">2028</span>
+    <span class="dakar-badge-sub">Suisse → lac Rose</span>
+  </a>
 </section>
 
 <!-- Bande Dakar 2028 -->
-<div class="dakar-band">
-  <p><strong>Et au-delà du Maroc ?</strong> Projet <strong>Dakar 2028</strong> : de la Suisse au lac Rose, et retour. <a href="https://dakar-2028-smr-3ivelod.gamma.site/" target="_blank" rel="noopener noreferrer">Découvrir l'aventure →</a></p>
-</div>
+<section class="dakar-band">
+  <div class="dakar-band-inner">
+    <p class="dakar-band-eyebrow">Et au-delà du Maroc ?</p>
+    <h2>Dakar 2028 : de votre porte jusqu'au lac Rose.</h2>
+    <div class="dakar-band-facts">
+      <span class="dakar-band-fact"><strong>36</strong>jours</span>
+      <span class="dakar-band-fact"><strong>4</strong>pays</span>
+      <span class="dakar-band-fact"><strong>9'300</strong>km</span>
+      <span class="dakar-band-fact"><strong>6</strong>motos max</span>
+    </div>
+    <a class="dakar-band-btn" href="https://dakar-2028-smr-3ivelod.gamma.site/" target="_blank" rel="noopener noreferrer">Découvrir l'aventure →</a>
+  </div>
+</section>
 
 <section class="section-white">
   <div class="container">
@@ -374,7 +412,7 @@ footer.site-footer{background:var(--dark);color:#D1D5DB;padding-top:56px;padding
     <div class="footer-bottom">
       <span>© 2026 Sahara Moto Ride. Tous droits réservés.</span>
       <span> | Site réalisé par <a href="https://elite360digital.com/" target="_blank" rel="noopener noreferrer" class="footer-credit">Elite 360 Digital</a></span>
-      <span style="opacity:0.55;"> | v1.2 – 11.10.2026</span>
+      <span style="opacity:0.55;"> | v1.3 – 13.10.2026</span>
     </div>
   </footer>
 
